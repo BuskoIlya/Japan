@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+        <title>Сжатие по алгоритму Хаффмана</title>
+<style type="text/css">
+body { position: relative; padding-bottom: 100px; }
+#lrek { position: absolute; width:100%; bottom: 0; font-size: 10px }
+#lrek * { font-size: 10px;}
+a,.out {text-decoration: none; cursor:pointer;color:#06c}
+a:hover,.out:hover {text-decoration: underline; color: #ff6600;cursor:pointer }
+h2 {font-size:14pt; font-family:sans-serif; font-weight:bold }
+pre {font-size:12pt}
+.source {font-size:12pt; color: #666699}
+.l2 {font-size:13pt}
+.l3 {font-size:12pt}
+a,.out, p, td { font-size: 13pt }
+</style>
+<meta name="keywords" content="алгоритм, построение, создание, написание, исходник, программа, определение, метод, вычисление, поиск, нахождение, реализация, описание, сжатие, компрессия данных, архивирование, архивация, кодирование, собрание, текст, стандартный, общий, избыток, энтропия, Хаффман, двупроходной, двухпроходной">
+<meta name="description" content="Сжатие информации и кодирование. Общие алгоритмы cжатия и кодирования. Сжатие по алгоритму Хаффмана.">
+<meta name="copyright" content="Основной контент - Кантор Илья, дизайн - Владимир Городулин, основа движка и разнообразная помощь - Алексей Фортуна">
+</head>
+
+<body vlink="#0066cc" topmargin="0" marginwidth="0" marginheight="0" link="#0066cc" leftmargin="0" bgcolor="#eeeeee">
+
+<style>
+#logotable img { border-style:none }
+</style>
+<!-- logo header ... -->
+<table id="logotable" width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td colspan="2" width="100%" bgcolor="#DD6E00"><a href="http://algolist.manual.ru/"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/mlogo1.gif" width="313" height="41"></a></td></tr>
+<tr><td colspan="2" bgcolor="#ffffff"><a href="http://algolist.manual.ru/"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/mlogo2.gif" width="313" height="3"></a></td></tr>
+<tr><td><a href="http://algolist.manual.ru/"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/mlogo3.gif" width="313" height="33"></a></td><td width="100%" nowrap="nowrap" bgcolor="#FE7E00" background="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/mgrad.gif"><table cellspacing="3" cellpadding="0" border="0" align="right">
+      <tbody><tr valign="middle">
+<!--
+
+      <FORM NAME="search_form" METHOD=GET ACTION="/cgi-bin/search.cgi">
+      <td><INPUT TYPE="text" NAME="q" SIZE=30 VALUE="" class="inputfield"></td>
+      <td><INPUT TYPE="image" src="/img/search.gif" width=68 height=19 border=0 onclick="this.blur()"></td>
+      </FORM>
+
+-->
+      </tr>
+      </tbody></table></td></tr>
+<tr><td colspan="2" bgcolor="#ffffff"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/0.gif" width="1" height="1"></td></tr>
+</tbody></table>
+<!-- ...logo header -->
+
+<!--Rating@Mail.ru COUNTER--><script type="text/javascript" async="" src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/watch.js"></script><script type="text/javascript" async="" src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/ga.js"></script><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<IMG src="http://d8.c7.bf.a0.top.list.ru/counter'+
+'?id=1013908;js='+js+a+';rand='+Math.random()+
+'" height=1 width=1/>')
+if(11<js)d.write('<'+'!-- ')//--></script><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/counter.htm" width="1/" height="1"><!-- <noscript><img
+src="http://d8.c7.bf.a0.top.list.ru/counter?js=na;id=1013908"
+height=1 width=1 alt=""/></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--><!--/COUNTER-->
+
+
+<!-- main menu ... -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tbody><tr><td bgcolor="#57A7EA">
+        <table cellspacing="0" cellpadding="0" border="0"><tbody><tr>
+        <td><a href="http://algolist.manual.ru/"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/bs0.gif" alt=":: алгоритмы  и методы ::" width="140" height="17" border="0"></a></td>
+        <td><a href="http://algolist.manual.ru/olimp/"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/bs1.gif" alt=":: олимпиадные задачи ::" width="140" height="17" border="0"></a></td>
+        <td><a href="http://algolist.manual.ru/contact.php"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/bs2.gif" alt=":: связь ::" width="47" height="17" border="0"></a></td>
+        <td><a href="http://algolist.manual.ru/aboutsite.php"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/bs3.gif" alt=":: о сайте ::" width="57" height="17" border="0"></a></td>
+<!--	<td><img onclick="window.location='http://forum.algolist.ru/'" style="cursor:pointer" src="/img/bs6.gif" width=49 height=17 border=0 alt=":: форум ::"></td> -->
+<!--        <td><a href="/links/"><img src="/img/bs5.gif" width=57 height=17 border=0 alt=":: ссылки ::"></a></td>-->
+        </tr></tbody></table>
+</td></tr>
+<tr><td bgcolor="#ffffff"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/0.gif" width="1" height="1"></td></tr>
+</tbody></table>
+<!-- ...main menu -->
+
+<!-- path line... -->
+<table width="100%" cellspacing="2" cellpadding="2" border="0" bgcolor="#dddddd">
+<tbody><tr><td style="white-space:nowrap"><b>Путь:  <a href="http://algolist.manual.ru/compress/">Сжатие и кодирование</a> » <a href="http://algolist.manual.ru/compress/standard/">Общие алгоритмы</a> » алгоритм Хаффмана</b></td></tr>
+</tbody></table>
+<!-- ...path line -->
+
+<!-- 
+==============
+ MAIN CONTENT:
+==============
+-->
+
+
+<!-- табличка для создания отступов... -->
+<table width="100%" cellspacing="0" cellpadding="12" border="0">
+<tbody><tr><td>
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+
+
+<tbody><tr><td colspan="2"><font size="4" face="Arial" color="#333333"><b>&nbsp; Сжатие по алгоритму Хаффмана</b></font></td></tr>
+
+<tr><td colspan="2" bgcolor="#999999"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/0.gif" width="1" height="1"><br></td></tr>
+
+                                                           
+
+<tr valign="top">
+        <td align="center"><img src="2019.06.20%20(03)%20%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%20%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%83%20%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0_files/0.gif" width="160" height="1"><br></td>
+        <td width="100%"><br>
+
+        
+
+
+
+<p><i> Huffman</i> - Сначала кажется что создание файла меньших  размеров из 
+исходного без  кодировки  последовательностей или исключения повтора байтов
+будет  невозможной  задачей. Но  давайте  мы заставим себя сделать несколько
+умственных  усилий  и  понять  алгоритм Хаффмана ( Huffman ). Потеряв не так
+много времени мы приобретем знания и дополнительное место на дисках.</p>
+<p>      Сжимая  файл  по алгоритму Хаффмана первое что мы должны сделать - это
+необходимо  прочитать  файл  полностью  и подсчитать сколько раз встречается
+каждый  символ  из  расширенного  набора  ASCII. Если мы будем учитывать все
+256 символов, то  для  нас не будет разницы в сжатии текстового и EXE файла.</p>
+<p>
+После  подсчета  частоты  вхождения  
+каждого символа, необходимо просмотреть
+таблицу  кодов  ASCII  и  сформировать  мнимую  компоновку  между  кодами по
+убыванию. То  есть  не  меняя  местонахождение  каждого символа из таблицы в
+памяти  отсортировать  таблицу  ссылок  на них по убыванию. Каждую ссылку из
+последней таблицы назовем "узлом".  В дальнейшем ( в дереве ) мы будем позже
+размещать  указатели  которые  будут  указывает  на этот "узел". Для ясности
+давайте рассмотрим пример:</p>
+<p> Мы  имеем  файл  длинной  в  100 байт и имеющий 6 различных символов в
+себе. Мы  подсчитали  вхождение  каждого  из  символов  в  файл  и получили
+следующее :</p>
+<pre>        |-----------------|-----|-----|-----|-----|-----|-----|
+        |     cимвол      |  A  |  B  |  C  |  D  |  E  |  F  |
+        |-----------------|-----|-----|-----|-----|-----|-----|
+        | число вхождений |  10 |  20 |  30 |  5  |  25 |  10 |
+        |-----------------|-----|-----|-----|-----|-----|-----|
+	</pre>	
+     <p>Теперь  мы  берем  эти  числа  и будем называть их частотой вхождения
+для каждого символа. Разместим таблицу как ниже.</p>
+<pre>        |-----------------|-----|-----|-----|-----|-----|-----|
+        |     cимвол      |  C  |  E  |  B  |  F  |  A  |  D  |
+        |-----------------|-----|-----|-----|-----|-----|-----|
+        | число вхождений |  30 |  25 |  20 |  10 |  10 |  5  |
+        |-----------------|-----|-----|-----|-----|-----|-----|</pre>
+<p>     Мы возьмем из последней таблицы  символы с наименьшей частотой. В нашем
+случае  это  D (5) и какой либо символ из F или A (10), можно взять любой из
+них например A.</p>
+<p>    Сформируем из "узлов" D и A новый "узел", частота вхождения для которого
+будет равна сумме частот D и A :</p>
+<pre>   Частота         30    10     5     10     20     25
+   Символа          C     A     D      F      B      E
+                          |     |
+                          |--|--|
+                            ||-|
+                            |15|  = 5 + 10
+                            |--|</pre>
+<p>     Номер  в  рамке - сумма частот символов D и A. Теперь мы снова ищем два
+символа с самыми  низкими частотами вхождения. Исключая из просмотра D и A и
+рассматривая  вместо  них новый "узел" с суммарной частотой вхождения. Самая
+низкая  частота  теперь  у F и нового "узла". Снова сделаем операцию слияния
+узлов :</p>
+<pre>   Частота         30    10     5     10     20     25
+   Символа          C     A     D      F      B      E
+                          |     |      |
+                          |     |      |
+                          | |--||      |
+                          |-|15||      |
+                            ||-|       |
+                             |         |
+                             |    |--| |
+                             |----|25|-| = 10 + 15
+                                  |--|</pre>
+<p>     Рассматриваем таблицу снова для следующих двух символов ( B и E ).
+Мы продолжаем в этот режим пока все "дерево" не сформировано, т.е. пока все
+не сведется к одному узлу.</p>
+<pre>   Частота         30    10     5     10     20     25
+   Символа          C     A     D      F      B      E
+                    |     |     |      |      |      |
+                    |     |     |      |      |      |
+                    |     | |--||      |      |      |
+                    |     |-|15||      |      |      |
+                    |       ||-|       |      |      |
+                    |        |         |      |      |
+                    |        |    |--| |      | |--| |
+                    |        |----|25|-|      |-|45|-|
+                    |             ||-|          ||-|
+                    |    |--|      |             |
+                    |----|55|------|             |
+                         |-||                    |
+                           |   |------------|    |
+                           |---| Root (100) |----|
+                               |------------|
+</pre>
+<p>     Теперь когда наше дерево создано, мы можем кодировать файл. Мы должны
+всенда начнинать  из корня ( Root ). Кодируя первый символ (лист дерева С)
+Мы прослеживаем  вверх по дереву все повороты ветвей и если мы делаем левый
+поворот, то запоминаем 0-й бит, и аналогично 1-й бит  для правого поворота.
+Так для C, мы будем идти влево к 55 ( и запомним 0 ), затем снова влево (0)
+к самому  символу. Код  Хаффмана для нашего символа C - 00. Для следующего
+символа ( А )  у  нас  получается - лево,право,лево,лево , что выливается в
+последовательность 0100. Выполнив  выше сказанное для всех символов получим
+</p>
+<pre>   C = 00   ( 2 бита )
+   A = 0100 ( 4 бита )
+   D = 0101 ( 4 бита )
+   F = 011  ( 3 бита )
+   B = 10   ( 2 бита )
+   E = 11   ( 2 бита )
+</pre>
+<p>     Каждый символ изначально представлялся 8-ю битами ( один байт ), и так
+как мы уменьшили число битов необходимых для представления каждого символа,
+мы следовательно  уменьшили  размер  выходного  файла. Сжатие  складывется
+следующим образом :</p>
+<pre>       |----------|----------------|-------------------|--------------|
+       | Частота  |  первоначально |  уплотненные биты | уменьшено на |
+       |----------|----------------|-------------------|--------------|
+       |  C 30    |  30 x 8 = 240  |    30 x 2 = 60    |      180     |
+       |  A 10    |  10 x 8 =  80  |    10 x 3 = 30    |       50     |
+       |  D 5     |   5 x 8 =  40  |     5 x 4 = 20    |       20     |
+       |  F 10    |  10 x 8 =  80  |    10 x 4 = 40    |       40     |
+       |  B 20    |  20 x 8 = 160  |    20 x 2 = 40    |      120     |
+       |  E 25    |  25 x 8 = 200  |    25 x 2 = 50    |      150     |
+       |----------|----------------|-------------------|--------------|
+     Первоначальный размер файла : 100 байт - 800 бит;
+            Размер сжатого файла :  30 байт - 240 бит;
+
+       240 - 30% из 800 , так что мы сжали этот файл на 70%.
+</pre>
+<p>    Все  это довольно хорошо, но неприятность находится в том факте, что для
+восстановления первоначального файла, мы  должны  иметь декодирующее дерево,
+так как деревья будут различны для разных файлов.  Следовательно мы  должны
+сохранять  дерево  вместе  с  файлом. Это превращается в итоге в увеличение
+размеров выходного файла.</p>
+<p>    В  нашей  методике  сжатия  и  каждом  узле находятся 4 байта указателя,
+по этому, полная таблица для 256 байт будет приблизительно 1 Кбайт  длинной.
+</p>
+<p>    Таблица в нашем  примере  имеет  5 узлов плюс 6 вершин ( где и находятся
+наши  символы  ) , всего 11. 4  байта  11  раз - 44. Если мы добавим после
+небольшое  количество  байтов  для  сохранения места узла и некоторую другую
+статистику - наша  таблица  будет приблизительно 50 байтов длинны.</p>
+<p>    Добавив  к  30 байтам сжатой информации, 50 байтов таблицы получаем, что
+общая  длинна   архивного   файла   вырастет  до  80  байт.  Учитывая , что
+первоначальная  длинна  файла  в  рассматриваемом примере была 100 байт - мы
+получили 20% сжатие информации.</p>
+<p>    Не плохо. То  что  мы  действительно выполнили - трансляция символьного
+ASCII  набора  в  наш  новый  набор  требующий  меньшее количество знаков по
+сравнению с стандартным.</p>
+    Что мы можем получить на этом пути ?
+<p>    Рассмотрим  максимум  которй  мы  можем получить для различных разрядных
+комбинацй в оптимальном дереве, которое является несимметричным.</p>
+<pre>    Мы получим что можно иметь только :
+                 4 - 2 разрядных кода;
+                 8 - 3 разрядных кодов;
+                16 - 4 разрядных кодов;
+                32 - 5 разрядных кодов;
+                64 - 6 разрядных кодов;
+               128 - 7 разрядных кодов;
+
+     Необходимо еще два 8 разрядных кода.
+                 4 - 2 разрядных кода;
+                 8 - 3 разрядных кодов;
+                16 - 4 разрядных кодов;
+                32 - 5 разрядных кодов;
+                64 - 6 разрядных кодов;
+               128 - 7 разрядных кодов;
+             --------
+               254
+</pre>
+<p>     Итак  мы  имеем  итог  из   256  различных  комбинаций  которыми  можно
+кодировать  байт.  Из  этих  комбинаций  лишь  2  по  длинне равны 8 битам.
+Если  мы  сложим  число  битов которые  это представляет, то в итоге получим
+1554 бит или 195 байтов. Так  в максимуме , мы сжали 256 байт к 195 или 33%,
+таким  образом  максимально  идеализированный Huffman может достигать сжатия
+в 33% когда используется на уровне байта.</p>
+<p>     Все  эти  подсчеты  производились для не префиксных кодов Хаффмана т.е.
+кодов, которые  нельзя идентифицировать однозначно. Например код A - 01011 и
+код B - 0101. Если мы будем получать эти коды побитно, то получив биты 0101
+мы  не  сможем сказать какой код мы получили A или B , так как следующий бит
+может  быть  как  началом  следующего  кода, так и продолжением предыдущего.</p>
+<p>     Необходимо  добавить,  что  ключем к построению префиксных кодов служит
+обычное  бинарное  дерево  и  если внимательно рассмотреть предыдущий пример
+с  построением  дерева ,  можно  убедится ,  что  все  получаемые  коды  там
+префиксные.</p>
+<p>     Одно  последнее  примечание - алгоритм  Хаффмана требует читать входной
+файл  дважды , один  раз  считая  частоты  вхождения  символов , другой  раз
+производя непосредственно кодирование.</p>
+                 
+ 
+ А здесь - <a href="http://algolist.manual.ru/compress/standard/huffman.pas">реализация</a> на Паскалe.<br>
+</td>
+</tr>
+</tbody></table>
+
+<hr>
+
+<!-- ...табличка для создания отступов-->
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2056213-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter21593104 = new Ya.Metrika({id:21593104,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/21593104" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+
+
+</td></tr></tbody></table></body></html>

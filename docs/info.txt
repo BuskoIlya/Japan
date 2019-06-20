@@ -1,0 +1,6 @@
+Ctrl + Shift + L - горячие клавиши eclipse
+
+https://habr.com/ru/users/SLY_G/ - вячеслав голованов
+
+http://www.compression-pointers.ru/ - алгоритмы сжатия и компрессии
+
