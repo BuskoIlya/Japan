@@ -7,3 +7,5 @@ http://www.compression-pointers.ru/ - алгоритмы сжатия и ком�
 http://www.quizful.net - вопросы к собеседованиям
 
 https://stepik.org/catalog?tag=22872 - курсы по программированию степик
+
+http://www.frolov-lib.ru/books/bsp.old/v02/ch8.htm - контроллер прерываний
