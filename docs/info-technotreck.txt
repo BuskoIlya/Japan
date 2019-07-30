@@ -1,0 +1,308 @@
+Структура курса:
+ 1. ТЗ
+ 2. Окружение
+ 3. Верстка клиентской части
+ 4. Программирование бэкенда
+ 5. Запуск
+
+
+1.) Веб-разработка. Введение, сетевые протоколы | Технострим
+
+
+Функци проекта:
+ 1. Авторизация
+ 2. Наличие создаваемого пользователем контента
+ 3. Комментарии
+ 4. Пользовательские действия в одно нажатие
+ 5. Проверка прав
+
+HTML, CSS, Frontend (Nginx, Gunicorn), Backend (Python, Django), DB (Mysql)
+
+Сетевые протоколы:
+ 1. Прикладной уровень (FTP, TELNET, HTTP | DNS, TFTP)
+ 2. Транспортный уровень (TCP | UDP)
+ 3. Сетевой уровень (IP)
+ 4. Физический и канальный уровень (Ethernet, Slip, X.25, PPP, ATM)
+
+linux: host yandex.ru
+windows: nslookup yandex.ru
+
+linux: whois yandex.ru
+windows: https://docs.microsoft.com/en-us/sysinternals/downloads/whois
+
+1. https - протокол
+2. track.mail.ru - хост
+3. 80 - порт
+4. /blog/topic/11/ - путь
+5. ?a=1&b=2 - строка запроса
+6. #comment_id_67 - якорь
+
+telnet
+
+Telnet - программа удаленного доступа, позволяющая входить в другую вычислительную систему, 
+работающую в Интернет, с помощью протокола TELNET. Программа Telnet состоит из двух компонент:
+- программы-клиента, обеспечивающей: соединения с сервером, прием от абонента входных данных, 
+преобразование их к стандартному формату и отсылку серверу, а также прием от сервера результатов 
+запроса в стандартном формате и переформатирование их в вид, удобный клиенту;
+- программы-сервера, обеспечивающей: ожидание и обслуживание запроса, а также отсылку 
+результатов программе-клиенту.
+
+http redirect
+
+http range
+
+http cookie
+
+https ssl tls
+
+https сертификаты
+
+
+2.) Веб-разработка. Веб-серверы | Технострим
+
+
+Основы Unix, веб-серверы:
+ 1. Основы Unix
+ 2. Способы серверной работы с сокетами
+ 3. Схема работы веб-сервера
+ 4. Frontend. Nginx
+ 5. Сервера приложений. Gunicorn
+
+ls
+su username
+adduser
+addgroup
+chown username filename
+chgrp groupname filename
+chmod [u,g,o][+,-][r,w,x] filename
+
+su root
+!!! get install Nginx - поставить Nginx
+
+apt-cache search name
+apt-get install name
+brew install name
+yum install name
+pip install name
+
+мэнеджер пакетов в unix
+Процессы:
+ - pid - номер процесса
+ - ppid - номер родительского процесса
+ - состояние процесса - (run, sleep, zomby)
+ - таблица дескрипторов IO
+ - tty - текущий терминал
+ - имя пользователя, который запустил
+
+pstree, top, ps - запущенные процессы
+демоны, сигналы
+kill pid
+nohup ... &
+cat /var/run/ndinx.pid
+
+демон отличается от обычного процесса тем, что отвязан от терминала.
+
+env
+set VARNAME=value
+export VARNAME=value
+unset VARNAME
+
+Процесс имеет три потока по умолчанию: stdin, stdout, stderr
+
+Конвеер (потоков): ps ax | grep python | less
+
+Unix cmds: man, cp, mv, rm, mkdir, ls, chmod, chown, top, ps, telnet, netcat,
+nohup, kill, vi, mcedit, grep, watch, screen
+
+simple.py
+#!/usr/local/bin/python
+
+import socket
+
+server_socket = socket.socket()
+server_socket.bind(('', 8080))
+server_socket.listen(10)
+
+
+while True:
+    client_socket, remote_address = server_socket.accept()
+    try:
+        request = client_socket.recv(1024)
+        client_socket.send(request.upper())
+        print(f'{client_socket.getpeername()} : {request}')
+        client_socket.close()
+    except:
+        pass
+
+server_socket.close()
+
+python simple.py
+telnet sat2707.com 8080
+
+
+fork.py
+#!/usr/local/bin/python
+
+import socket
+import os
+import sys
+
+server_socket = socket.socket()
+server_socket.bind(('', 8080))
+server_socket.listen(10)
+
+
+while True:
+    client_socket, remote_address = server_socket.accept()
+    child_id = os.fork()
+    if child_id == 0:
+        request = client_socket.recv(1024)
+        client_socket.send(request.upper())
+        print(f'(child_id) = {child_id} {client_socket.getpeername()} : {request}')
+        client_socket.close()
+        sys.exit()
+    else:
+        client_socket.close()
+
+server_socket.close()
+
+ps ax | grep fork
+
+
+prefork.py
+#!/usr/local/bin/python
+
+import socket
+import os
+import sys
+
+server_socket = socket.socket()
+server_socket.bind(('', 8080))
+server_socket.listen(10)
+
+
+for i in range(4):
+    child_id = os.fork()
+    if child_id == 0:
+        try:
+            while True:
+                client_socket, remote_address = server_socket.accept()
+                request = client_socket.recv(1024)
+                client_socket.send(request.upper())
+                print(f'(child_id) = {child_id} {client_socket.getpeername()} : {request}')
+                client_socket.close()
+        except KeyboardInterrupt:
+            sys.exit()
+
+try:
+    os.waitpid(-1, 0)
+except KeyboardInterrupt:
+    sys.exit()
+
+
+async.py
+#!/usr/local/bin/python
+
+import socket
+import select
+
+server_socket = socket.socket()
+server_socket.bind(('', 8080))
+server_socket.setblocking(0)
+server_socket.listen(10)
+
+inputs = {server_socket}
+outputs = {}
+excepts = []
+
+while 1:
+    input_ready, output_ready, except_ready = select.select(list(inputs), outputs.keys(), excepts, 0.5)
+    for s in input_ready:
+        if s == server_socket:
+            client_socket, remote_address = server_socket.accept()
+            client_socket.setblocking(0)
+            inputs.add(client_socket)
+        else:
+            request = s.recv(1024)
+            print(f'{client_socket.getpeername()} : {request}')
+            outputs[s] = request.upper()
+            inputs.remove(s)
+    for s in output_ready:
+        if s in outputs:
+            s.send(outputs[s])
+            del outputs[s]
+            s.close()
+...
+
+Способы серверной работы с сокетами:
+1. blocking IO - ждем событий
+2. fork - порождаем процесс, он ждет событий
+3. prefork - раздаем сокет процессам
+4. AIO - итерируемся по наступившим событиям
+5. threads - как fork, но внутри одного процесса
+AIO - select, kqueue, poll, epoll
+
+Схема работы веб-сервера:
+1. Читаем конфиг
+2. Получаем сокет
+3. Открываем логи на запись
+4. Понижаем привилегии
+5. Запуск дочерних процессов/потоков
+6. Работаем в цикле
+
+Модульная архитектура веб-сервера:
+1. веб-сервер - не монолитный
+2. LoadModule - загрузка модулей
+3. Этапы обработки запроса и модули
+4. Дополнительные директивы, контексты
+
+Файл веб-сервера:
+1. Конфиг /etc/nginx/nginx.conf
+2. Скрипт запуска /etc/init.d/nginx
+3. PID-файл /var/run/nginx.pid
+4. Access-log /var/log/nginx/access.log
+5. Error-log /var/log/nginx/error.log
+
+Процессы веб-сервера:
+1. Master (root, 1)
+ Чтение и валидация конфига
+ Открытие сокетов
+ Открытие файлов логов
+ Запуск и управление дочерними процессами
+ Graceful restart
+2. Worker (www-data, 1+)
+ Обработка входящих запросов
+
+itportal.conf
+upstream{}
+server{
+ ...
+ location / {}
+}
+
+Frontend & Backend:
+Frontend:
+ 1. Отдача статистики
+ 2. Прокси к backend
+ 3. SSI, SSL, TSL
+ 4. Балансировка
+ 5. Кеширование
+ 6. Ресайз картинок, gzip...
+Backend:
+ Логика
+
+Способы работы с бекендом:
+ CGI
+ FastCGI
+ mod_perl, mod_python, mod_php, ...
+ PSGI, WSGI, Rack
+
+gunicorn -b 0.0.0.0:8080 project.wsgi:application
+http://gunicorn.org/#quickstart
+
+Д/З
+1. Поставить nginx, заставить отдавать статистику
+2. Поставить django
+3. Запустить django через WSGI
+
+
