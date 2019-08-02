@@ -306,3 +306,17 @@ http://gunicorn.org/#quickstart
 3. Запустить django через WSGI
 
 
+5.) Веб-разработка. html, css, javascript | Технострим
+
+http://htmlbook.ru/
+двухколоночная верстка
+прогресс бар
+диалоговое окно
+позиционирование(fixed), блочные и строчные
+bootstrap
+http://w3schools.com
+http://getbootstrap.com
+http://bootstrap-3.ru
+http://caniuse.com
+
+
