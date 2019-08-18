@@ -1,0 +1,73 @@
+@import "common_items.css";
+
+body {
+    background-image: url("../images/all_bkgr.gif");
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+}
+
+#main_template {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#main_header {
+	width: 1000px;
+}
+
+.cap_login_css {
+	height: 30px;
+	padding-left: 830px;
+}
+.cap_login_css > a {
+	padding-right: 10px;
+    font-size: var(--text_size_level_title_1);
+}
+
+.cap_logo_css{
+    height: 93px;
+	margin-top: 5px;
+}
+.cap_logo_left_css{
+    height: 93px;
+    background: url("../images/cap_left_flag.png") no-repeat;
+    width: 300px;
+    float: left;
+}
+.cap_logo_center_css{
+    height: 93px;
+    background: url("../images/cap_center_logo.png") no-repeat;
+    width: 400px;
+    float: left;
+}
+.cap_logo_right_css{
+    height: 93px;
+    background: url("../images/cap_right_ornament.png") no-repeat;
+    width: 300px;
+    float: left;
+}
+
+#main_content {
+    min-height: 30vh;
+}
+
+#main_bottom {
+	width: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--field_btn_border_color);
+    border-bottom: 1px solid var(--field_btn_border_color);
+    padding: 10px 0px 20px 0px;
+}
+
+#div_blr_id {
+    display: inline-block;
+    margin: 0;
+    margin-left: 30px;
+}
+#div_clubs_id {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: 70px;
+}

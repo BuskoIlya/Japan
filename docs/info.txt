@@ -12,3 +12,6 @@ http://www.frolov-lib.ru/books/bsp.old/v02/ch8.htm - контроллер пре
 
 http://htmlbook.ru/
 
+http://shpargalkablog.ru
+
+https://learn.javascript.ru/
