@@ -1,0 +1,141 @@
+@import "common.less";
+
+#t_menu,
+#t_menu ul,
+#t_menu li,
+#t_menu a {
+  line-height: 1;
+}
+#t_menu {
+  height: 37px;
+  display: block;
+  width: @width_site;
+  margin: 0 auto;
+}
+#t_menu > ul {
+  list-style: inside none;
+  margin: 0;
+  padding: 0;
+}
+#t_menu > ul > li {
+  list-style: inside none;
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#t_menu.align-center > ul {
+  text-align: center;
+}
+#t_menu.align-center > ul > li {
+  float: none;
+  margin-left: -3px;
+}
+#t_menu.align-center ul ul {
+  text-align: left;
+}
+
+#t_menu > ul > li > a {
+  outline: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-size: 13px;
+  font-family: @font_faminly;
+  color: #ffffff;
+  padding: 12px 20px;
+}
+
+#t_menu > ul > li > a:after {
+  content: "";
+  position: absolute;
+  z-index: 99;
+}
+#t_menu ul li.has-sub:hover > a:after {
+  top: 0;
+  bottom: 0;
+}
+#t_menu > ul > li.has-sub > a:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  border: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+}
+
+#t_menu ul li.has-sub:hover > ul,
+#t_menu ul li.has-sub:hover > div {
+  display: block;
+}
+
+#t_menu > ul > li.has-sub > a:hover,
+#t_menu > ul > li.has-sub:hover > a {
+  background: #29761a;
+}
+#t_menu ul li > ul,
+#t_menu ul li > div {
+  display: none;
+  width: auto;
+  position: absolute;
+  top: 38px;
+  background: -moz-linear-gradient(top, #eae9ec 0%, #b7b6b9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eae9ec), color-stop(100%, #b7b6b9));
+  background: -webkit-linear-gradient(top, #eae9ec 0%, #b7b6b9 100%);
+  background: -o-linear-gradient(top, #eae9ec 0%, #b7b6b9 100%);
+  background: -ms-linear-gradient(top, #eae9ec 0%, #b7b6b9 100%);
+  background: linear-gradient(top, #eae9ec 0%, #b7b6b9 100%);
+  z-index: 999;
+  padding: 10px 0;
+}
+#t_menu ul li > ul {
+  width: 200px;
+}
+#t_menu ul ul ul {
+  position: absolute;
+}
+#t_menu ul ul li:hover > ul {
+  left: 100%;
+  top: -10px;
+}
+#t_menu ul li > ul li {
+  display: block;
+  list-style: inside none;
+  position: relative;
+}
+#t_menu ul li > ul li a {
+  outline: none;
+  display: block;
+  position: relative;
+  font-size: 10pt;
+  font-family: @font_faminly;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 8px 20px;
+}
+#t_menu,
+#t_menu ul ul > li:hover > a,
+#t_menu ul ul li a:hover {
+  background: -moz-linear-gradient(top, #04b100 0%, #045900 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #04b100), color-stop(100%, #045900));
+  background: -webkit-linear-gradient(top, #04b100 0%, #045900 100%);
+  background: -o-linear-gradient(top, #04b100 0%, #045900 100%);
+  background: -ms-linear-gradient(top, #04b100 0%, #045900 100%);
+  background: linear-gradient(top, #04b100 0%, #045900 100%);
+}
+#t_menu > ul > li > a:hover {
+  background: #29761a;
+  color: #ffffff;
+}
+#t_menu ul ul a:hover {
+  color: #ffffff;
+}
+#t_menu > ul > li.has-sub > a:hover:before {
+  border-top: 5px solid #ffffff;
+}

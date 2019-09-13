@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en/ru'>
+<head>
+  <meta charset='UTF-8'>
+
+  <link rel='stylesheet' href='../css/common_items.css'>
+  <link type="text/css" rel="stylesheet/less" href='../less/common.less'>
+  <link rel='stylesheet' href='../css/main.css'>
+
+  <link rel='import' id='template_register' href='register.html'>
+  <link rel='import' id='template_login' href='login.html'>
+  <link rel='import' id='template_menu' href='menu.html'>
+  <link rel='import' id='template_club' href='template_club.html'>
+  <link rel='import' id='page_clubs' href='page_clubs.html'>
+
+  <script type='text/JavaScript' src='../js/main.js'></script>
+
+</head>
+
+<body>
+
+
+<div id='main_template'>
+
+  <!-- -------------------------------------------- -->
+  <!-- ---------------- HEADER -------------------- -->
+  <!-- -------------------------------------------- -->
+  <div id='main_header'>
+
+    <div id='cap_login_id' class="cap_login_css">
+      <a href='#' class="a_href_decoration"
+         onclick="insert_html_into_div(
+            'main_content', '#template_register', '#template_register_id')">
+        <span>Регистрация</span></a>
+      <a href='#' class="a_href_decoration"
+         onclick="insert_html_into_div(
+            'main_content', '#template_login', '#template_login_id')">
+        <span>Войти</span>
+      </a>
+    </div>
+
+    <div id='cap_logo_id' class='cap_logo_css'>
+      <div class='cap_logo_left_css'></div>
+      <div class='cap_logo_center_css'></div>
+      <div class='cap_logo_right_css'></div>
+    </div>
+
+    <script>insert_html_into_div(
+        'main_header', '#template_menu', '#cssmenu')</script>
+
+  </div>
+
+  <!-- -------------------------------------------- -->
+  <!-- --------------- CONTENT -------------------- -->
+  <!-- -------------------------------------------- -->
+  <div id='main_content'>
+    <script>insert_html_into_div(
+        'main_content', '#page_clubs', '#p_clubs_id')</script>
+  </div>
+
+  <!-- -------------------------------------------- -->
+  <!-- ---------------- BOTTOM -------------------- -->
+  <!-- -------------------------------------------- -->
+  <div id="main_bottom">
+
+    <div id="div_blr_id">
+      <script>create_club_icon("main_bottom", "#template_club",
+          "Го клубы Беларуси", "logo_blr_css", undefined, 100)</script>
+    </div>
+
+    <div id="div_clubs_id">
+      <script>create_club_icon("div_clubs_id", "#template_club",
+          "Каменный дракон", "logo_kd_css", "Минск", 55)</script>
+      <script>create_club_icon("div_clubs_id", "#template_club",
+          "Победа", "logo_pobeda_css", "Витебск", 55)</script>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
