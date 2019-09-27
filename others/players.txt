@@ -1,0 +1,35 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="players.css">
+</head>
+<body>
+<div id="t_players_id">
+    <div id="tp_table_head_id">
+        <table>
+            <thead>
+				<tr class="row100 head">
+					<th class="cell100 column1 head_cell">№</th>
+                    <th class="cell100 column2 head_cell">ФИО</th>
+					<th class="cell100 column3 head_cell">Город</th>
+					<th class="cell100 column4 head_cell">Ранг</th>
+					<th class="cell100 column5 head_cell">Рейтинг</th>
+				</tr>
+			</thead>
+		</table>
+    </div>
+    
+    <div id="tp_table_body_id">
+        <table>
+			<tbody>
+                <tr class="row100 body">
+					<td class="cell100 column1">Like a butterfly</td>
+					<td class="cell100 column2">Boxing</td>
+                    <td class="cell100 column3">9:00 AM - 11:00 AM</td>
+					<td class="cell100 column4">Aaron Chapman</td>
+					<td class="cell100 column5">10</td>
+				</tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
