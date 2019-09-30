@@ -1,0 +1,116 @@
+.a_decoration {
+  text-decoration: none;
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: black;
+}
+.a_decoration_hover {
+  text-decoration: underline;
+  color: #045900;
+}
+a {
+  text-decoration: none;
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: #045900;
+}
+/*
+Club icon css classes.
+ */
+.ci_name_css {
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+.ci_logo_css {
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain !important;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  /* It can be overridden */
+  border-radius: 55px;
+  width: 55px;
+  height: 55px;
+}
+/*
+Club logo icons.
+ */
+.logo_blr_css {
+  background: url("../images/blr_karta.png") no-repeat;
+}
+.logo_kd_css {
+  background: url("../images/logo_kd.png") no-repeat;
+}
+.logo_pobeda_css {
+  background: url("../images/logo_pobeda.png") no-repeat;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-image: url("../images/all_bkgr.gif");
+  background-repeat: repeat-y;
+  background-position: 50% 0;
+}
+#main_template {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+}
+#main_header {
+  width: 1000px;
+}
+#main_content {
+  min-height: calc(100% - 150px);
+}
+#main_bottom {
+  width: 1000px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #045900;
+  border-bottom: 1px solid #045900;
+  padding: 10px 0px 20px 0px;
+}
+.cap_login_css {
+  height: 30px;
+  padding-left: 830px;
+}
+.cap_login_css > a {
+  padding-right: 10px;
+  font-size: 16px;
+}
+.cap_logo_css {
+  height: 93px;
+  margin-top: 5px;
+}
+.cap_logo_left_css {
+  height: 93px;
+  background: url("../images/cap_left_flag.png") no-repeat;
+  width: 300px;
+  float: left;
+}
+.cap_logo_center_css {
+  height: 93px;
+  background: url("../images/cap_center_logo.png") no-repeat;
+  width: 400px;
+  float: left;
+}
+.cap_logo_right_css {
+  height: 93px;
+  background: url("../images/cap_right_ornament.png") no-repeat;
+  width: 300px;
+  float: left;
+}
+#div_blr_id {
+  display: inline-block;
+  margin: 0;
+  margin-left: 30px;
+}
+#div_clubs_id {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-left: 70px;
+}

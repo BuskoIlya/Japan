@@ -1,0 +1,47 @@
+.a_decoration {
+  text-decoration: none;
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: black;
+}
+.a_decoration_hover {
+  text-decoration: underline;
+  color: #045900;
+}
+a {
+  text-decoration: none;
+  font-family: 'Lucida Grande', Tahoma, Verdana, sans-serif;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: #045900;
+}
+/*
+Club icon css classes.
+ */
+.ci_name_css {
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+.ci_logo_css {
+  margin-left: auto;
+  margin-right: auto;
+  background-size: contain !important;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  /* It can be overridden */
+  border-radius: 55px;
+  width: 55px;
+  height: 55px;
+}
+/*
+Club logo icons.
+ */
+.logo_blr_css {
+  background: url("../images/blr_karta.png") no-repeat;
+}
+.logo_kd_css {
+  background: url("../images/logo_kd.png") no-repeat;
+}
+.logo_pobeda_css {
+  background: url("../images/logo_pobeda.png") no-repeat;
+}
