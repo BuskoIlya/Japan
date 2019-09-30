@@ -1,0 +1,119 @@
+<script type="text/javascript" src="./libs/jquery-3.4.1.min.js"></script>
+<script src="./js/news.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        var timelineBlocks = $('.cd-timeline-block'),
+            offset = 0.8;
+
+        //hide timeline blocks which are outside the viewport
+        hideBlocks(timelineBlocks, offset);
+
+        //on scolling, show/animate timeline blocks when enter the viewport
+        $(window).on('scroll', function () {
+            (!window.requestAnimationFrame)
+                ? setTimeout(function () {
+                    showBlocks(timelineBlocks, offset);
+                }, 100)
+                : window.requestAnimationFrame(function () {
+                    showBlocks(timelineBlocks, offset);
+                });
+        });
+
+        function hideBlocks(blocks, offset) {
+            blocks.each(function () {
+                ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+            });
+        }
+
+        function showBlocks(blocks, offset) {
+            blocks.each(function () {
+                ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.cd-timeline-img').hasClass('is-hidden')) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+            });
+        }
+    });
+</script>
+
+<div id="t_news_id">
+  <section id="cd-timeline" class="cd-container">
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img pink">
+        <img src="./images/news/cd-icon-picture.svg" alt="Picture">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Кубок Китайского Консула</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+          rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste
+          voluptatibus minus veritatis qui ut.
+        </p>
+        <a href="#" class="btn_ahref pink" data-text="Читать далее...">Читать далее...</a>
+        <span class="cd-date">Jan 14</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img green">
+        <img src="./images/news/cd-icon-picture.svg" alt="Movie">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Кубок Минска</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+          rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
+        </p>
+        <a href="#" class="btn_ahref pink" data-text="Читать далее...">Читать далее...</a>
+        <span class="cd-date">Jan 18</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img blue">
+        <img src="./images/news/cd-icon-picture.svg" alt="Picture">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Чемпионат мира</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam
+          id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit
+          similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque,
+          deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia
+          eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam
+          dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut
+          adipisci. </p>
+        <a href="#" class="btn_ahref pink" data-text="Читать далее...">Читать далее...</a>
+        <span class="cd-date">Jan 24</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img blue">
+        <img src="./images/news/cd-icon-picture.svg" alt="Location">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Кубок Премьер Министра Кореи</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+          rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste
+          voluptatibus minus veritatis qui ut. </p>
+        <a href="#" class="btn_ahref pink" data-text="Читать далее...">Читать далее...</a>
+        <span class="cd-date">Feb 14</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+    <div class="cd-timeline-block">
+      <div class="cd-timeline-img green">
+        <img src="./images/news/cd-icon-picture.svg" alt="Location">
+      </div> <!-- cd-timeline-img -->
+
+      <div class="cd-timeline-content">
+        <h2>Belarus Study Open</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident
+          rerum. </p>
+        <a href="#" class="btn_ahref pink" data-text="Читать далее...">Читать далее...</a>
+        <span class="cd-date">Feb 18</span>
+      </div> <!-- cd-timeline-content -->
+    </div> <!-- cd-timeline-block -->
+
+  </section> <!-- cd-timeline -->
+</div>
