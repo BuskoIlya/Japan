@@ -1,0 +1,77 @@
+<script>
+    $(document).ready(function () {
+        html_in_div("./html/b_slider.html", "#bm_slider_id");
+        html_in_div("./html/b_news.html", "#bm_news_list_id");
+        html_in_div("./html/b_tournament_main.html", "#bm_tournament_list_id");
+    });
+</script>
+
+<style>
+  @-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(-100%, 0);
+      transform: translate(-100%, 0)
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0)
+    }
+  }
+
+  .marquee {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .marquee * {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 30s infinite linear;
+    animation: scroll 30s infinite linear;
+  }
+
+  .marquee *:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+</style>
+
+
+<div id="b_main_id">
+  <div id="bm_slider_id"></div>
+  <div class="news_line" style="border-top: 1px solid #cfd8dc">
+    <div class="marquee">
+      <div>
+        <p>Турнир "Осенний лист" состоится 25 октября в Минске в МДДМ</p>
+      </div>
+    </div>
+  </div>
+  <div id="bm_news_tourn_id" class="container">
+    <div class="row">
+      <div id="bm_news_tourn_body_id" class="">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9" style="width: 720px;
+                    padding-top: 15px; border-right: 1px solid #cfd8dc">
+          <h1>Новости</h1>
+          <div id="bm_news_list_id">
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" style="width: 280px;
+                    padding-top: 15px">
+          <h1>Турниры 2019 года</h1>
+          <div id="bm_tournament_list_id">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

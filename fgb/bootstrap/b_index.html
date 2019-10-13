@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en/ru">
+<head>
+  <meta charset="UTF-8">
+
+  <link type="text/css" rel="stylesheet/less" href="./css/b_buttons.less">
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet/less" href="./css/b_common.less">
+  <link type="text/css" rel="stylesheet/less" href="./css/b_players.less">
+  <link type="text/css" rel="stylesheet/less" href="./css/b_tournaments.less">
+
+  <link type="text/css" rel="stylesheet/less" href="./css/b_index.less">
+
+  <script type="text/javascript" src="./libs/jquery-3.4.1.min.js"></script>
+  <script src='./libs/jquery.tmpl.min.js'></script>
+  <script type="text/javascript" src="./libs/less.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./libs/jssor.slider.min.js"></script>
+  <script type="text/JavaScript" src="./js/index.js"></script>
+  <script>
+      $(document).ready(function () {
+          html_in_div("./html/b_menu.html", "#menu_id");
+          html_in_div("./html/b_main.html", "#main_id");
+          html_in_div("./html/b_footer.html", "#footer_id");
+      });
+  </script>
+</head>
+
+<body>
+<div id="body_id" class="">
+
+  <div id="top_id">
+    <div id="logo_id" class="logo_css">
+      <div class="logo_left_css"></div>
+      <div class="logo_center_css"></div>
+      <div class="logo_right_css"></div>
+    </div>
+    <div id="menu_id" style="border-top: 1px solid #cfd8dc; border-bottom: 1px solid #cfd8dc;
+        font-size: 16px">
+    </div>
+  </div>
+
+  <div id="main_id">
+  </div>
+
+  <div id="footer_id">
+  </div>
+
+</div>
+</body>

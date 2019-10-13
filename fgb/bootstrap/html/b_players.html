@@ -1,0 +1,70 @@
+<script>
+    var players = [{
+        'number': '1',
+        'full_name': 'Бусько Илья Владимирович',
+        'city': 'Витебск',
+        'level': '2 дан',
+        'score': '2209'
+    },
+        {
+            'number': '2',
+            'full_name': 'Супонев Александр Михайлович',
+            'city': 'Минск',
+            'level': '2 дан',
+            'score': '2158'
+        },
+        {
+            'number': '3',
+            'full_name': 'Герасютин Никита',
+            'city': 'Минск',
+            'level': '2 кю',
+            'score': '1802'
+        },
+        {
+            'number': '4',
+            'full_name': 'Грунковский Юрий',
+            'city': 'Минск',
+            'level': '3 кю',
+            'score': '1743'
+        }];
+    $(document).ready(function () {
+        for (var i = 0; i < players.length; i++) {
+            $('#player-template2').tmpl(players[i]).appendTo('#tp_table_body_id');
+        }
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='player-template2'>
+  <tr>
+    <td>${number}</td>
+    <td>${full_name}</td>
+    <td>${city}</td>
+    <td>${level}</td>
+    <td>${score}</td>
+  </tr>
+</script>
+
+<div id="t_players_id" style="margin-bottom: 20px">
+  <div id="players_panel_id">
+    <h1>Игроки</h1>
+
+    <div class="container" style="width: 860px">
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+          <tr class="active">
+            <th>№</th>
+            <th>ФИО</th>
+            <th>Город</th>
+            <th>Разряд</th>
+            <th>Рейтинг</th>
+          </tr>
+          </thead>
+          <tbody id="tp_table_body_id">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+

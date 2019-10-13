@@ -1,0 +1,154 @@
+<style>
+  #bt_news_item_id {
+    width: 650px;
+    margin: 10px;
+    padding: 0;
+  }
+
+  .wp-block.property.list {
+    border: 1px solid #e0eded;
+    margin-bottom: 25px !important;
+  }
+
+  .wp-block {
+    margin: 0 0 15px 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    position: relative;
+    cursor: default;
+    border-radius: 2px;
+  }
+
+  .wp-block.property.list {
+    padding: 15px 15px 0 15px;
+  }
+
+  .wp-block.property.list {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .wp-block .wp-block-body {
+    padding: 15px;
+  }
+
+  .wp-block.property.list .wp-block-img {
+    display: table-cell;
+    width: 250px;
+  }
+
+  .wp-block.property.list .wp-block-img img {
+    width: 100%;
+  }
+
+  .wp-block.property.list .wp-block-content .content-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .wp-block.property.list .wp-block-body .wp-block-content {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 15px;
+  }
+
+  .wp-block.property.list .wp-block-content .description {
+    padding-bottom: 10px;
+  }
+
+  .wp-block.property.list .wp-block-footer ul.aux-info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #fcfcfc;
+    border-top: 1px solid #e0eded;
+  }
+
+  .wp-block.property.list .wp-block-footer ul.aux-info li {
+    display: table-cell;
+    padding: 10px 15px;
+    vertical-align: middle;
+    border-right: 1px solid #e0eded;
+  }
+</style>
+
+<script>
+    var news = [{
+      'img': './images/news1_spb-china-cup.jpg',
+      'date': '16-17.02.2019',
+      'title': 'Кубок консула Китая',
+      'text': '16-го и 17-го февраля в Санкт-Петербурге прошел крупный турнир, ' +
+          'посвященный китайскому новому году и организованный совместно ' +
+          'федерацией го России и консульством Китая в Санкт-Петербурге.',
+      'add_class': 'btn_ahref pink',
+    },
+    {
+      'img': './images/news2_minsk-chp.jpg',
+      'date': '29,31.03.2019',
+      'title': 'Кубок Минска',
+      'text': 'В последние дни марта в Минске прошел кубок города по го.',
+      'add_class': 'btn_ahref green',
+    },
+    {
+      'img': './images/news3_wagc-japan.jpg',
+      'date': '30.05-07.06.2019',
+      'title': 'Чемпионат мира 2019 г.',
+      'text': 'C 30 мая по 7 июня в Японии в городе Мацуе, префектура Шиманэ, ' +
+          'прошел 40-ой чемпионат мира по го среди любителей.',
+      'add_class': 'btn_ahref blue',
+    },
+    {
+      'img': './images/news4_seul-4.jpg',
+      'date': '31.08-06.09.2019',
+      'title': 'Кубок премьер министра Южной Кореи',
+      'text': 'В начале сентября в Сеуле прошел кубок премьер министра ' +
+          'этой страны, который является вторым по значимости международным ' +
+          'соревнованием по го среди любителей.',
+      'add_class': 'btn_ahref blue',
+    }
+    ];
+    $(document).ready(function () {
+        for (var i = 0; i < news.length; i++) {
+            $('#news-template').tmpl(news[i]).appendTo('#bt_news_item_id');
+        }
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='news-template'>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="wp-block property list mybox">
+        <div class="wp-block-body">
+          <div class="wp-block-img">
+            <a href="#">
+              <img src=${img} alt="">
+            </a>
+          </div>
+          <div class="wp-block-content">
+            <p><small>
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
+            </small></p>
+            <p><a href="" class="${add_class}" style="font-size: 17px">${title}</a></p>
+            <p id="btn_text_id" class="description text-justify" style="font-size: 14px">${text}</p>
+          </div>
+        </div>
+        <div class="wp-block-footer">
+          <ul class="aux-info">
+            <li id="btn_eye_id">
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+            </li>
+            <li id="btn_comment_id">
+              <span class=" glyphicon glyphicon-comment" aria-hidden="true"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<div id="bt_news_item_id" class="container">
+</div>
