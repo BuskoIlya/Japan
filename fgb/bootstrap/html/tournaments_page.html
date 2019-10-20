@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        load_tournaments_data();
+        show_tournaments_data();
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='tournament_template'>
+    <div class="chain_block">
+      <div class="chain_icon ${back_color}">
+        <img src="./images/cd-icon-picture.svg" alt="Picture">
+      </div>
+      <div class="chain_data">
+        <h2>${name}</h2>
+        <p>${description}</p>
+        <span class="chain_date">${date}</span>
+      </div>
+    </div>
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Турниры</h1>
+
+    <div class="tabs_panel">
+      <div>
+        <div class="tabs_panel_col">
+          <div class="tabs_menu">
+            <div class="active"><span class="light"></span><span>2019</span></div>
+            <div><span class="light"></span><span>2018</span></div>
+          </div>
+        </div>
+        <div class="tabs_panel_col">
+          <ul class="tabs_data">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

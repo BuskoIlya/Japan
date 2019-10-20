@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default menu_decoration" role="navigation">
+<nav class="navbar navbar-default menu_css" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -12,7 +12,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="#" onclick="html_in_div('./html/b_main.html', '#main_id')">
+        <li class=""><a href="#" onclick="html_in_div('./html/main.html', '#main_id')">
           Главная
         </a></li>
         <li class="dropdown">
@@ -20,18 +20,26 @@
               class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#">Контакты</a></li>
-            <li><a href="#">Школы</a></li>
-            <li><a href="#">Новости</a></li>
+            <li><a href="#"
+                   onclick="html_in_div('./html/clubs_page.html', '#main_id')">
+              Секции
+            </a></li>
+            <li><a href="#"
+                   onclick="html_in_div('./html/news_page.html', '#main_id')">
+              Новости
+            </a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Игроки<b
               class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#" onclick="html_in_div('./html/b_players.html', '#main_id')">
+            <li><a href="#" onclick="html_in_div('./html/players_page.html', '#main_id')">
               Игроки (рейтин-лист)
             </a></li>
-            <li><a href="#">Турниры</a></li>
+            <li><a href="#" onclick="html_in_div('./html/tournaments_page.html', '#main_id')">
+              Турниры
+            </a></li>
           </ul>
         </li>
         <li class="dropdown">
