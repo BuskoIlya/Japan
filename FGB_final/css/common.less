@@ -1,0 +1,222 @@
+@window_width: 1000px;
+@width_left: 720px;
+@width_right: 280px;
+
+@font_size_icon_ok_19: 19px;
+@font_size_title_18: 18px;
+@font_size_tabs_17: 17px;
+@font_size_news_title_17: 17px;
+@font_size_menu_16: 16px;
+@font_size_date_14: 14px;
+@font_size_news_text_14: 14px;
+@font_size_city_13: 13px;
+
+@panel_title_font_size: @font_size_title_18;
+@panel_title_color: #555;
+@panel_title_back_color: #f3f3f3;
+@panel_margin: 20px;
+
+@border_color: #cfd8dc; //e4e6d3
+@border_block: 1px solid @border_color;
+@box_shadow_block: 0 0 10px rgba(0, 0, 0, 0.5);
+@inner_block_border_color: #e0eded;
+@inner_block_border: 1px solid @inner_block_border_color;
+
+// -----------------------------------------------------------
+// Цвета стран: Беларуси, России и международных соревнований.
+// -----------------------------------------------------------
+@blr_color_font: #3c763d;
+.blr_color_font_css {
+  color: @blr_color_font;
+}
+
+@blr_color_back: rgba(0, 214, 96, 1);
+.blr_color_back_css {
+  background-color: @blr_color_back;
+}
+
+@rus_color_font: #a94442;
+.rus_color_font_css {
+  color: @rus_color_font;
+}
+
+@rus_color_back: rgba(239, 33, 74, 1);
+.rus_color_back_css {
+  background-color: @rus_color_back;
+}
+
+@world_color_font: #337ab7;
+.world_color_font_css {
+  color: @world_color_font;
+}
+
+@world_color_back: rgba(6, 129, 128, 0.75);
+.world_color_back_css {
+  background-color: @world_color_back;
+}
+
+@select_color: #82b9e8;
+
+.select_our_player {
+  background-color: @select_color;
+}
+
+.results_table_hover {
+  .table tbody tr:hover {
+    border: 1.5px solid @select_color;
+  }
+}
+
+.icon_ok_active {
+  color: @blr_color_font;
+  float: right;
+  font-size: @font_size_icon_ok_19;
+}
+
+.icon_ok_inactive {
+  color: #77777761;
+  float: right;
+  font-size: @font_size_icon_ok_19;
+}
+
+// --------------------------------------------------------------------
+// Внутренняя панель вкладок меню, на которой показывается информация:
+// архив новостей, секции го, игроки, турниры.
+// --------------------------------------------------------------------
+.inner_page {
+  width: @window_width;
+  margin: 0 auto;
+}
+
+// -------------------------------------------
+// Оформление заголовка h1 у блока информации
+// -------------------------------------------
+.panel_title_css {
+  margin: -20px -20px 21px;
+  line-height: 40px;
+  font-size: @panel_title_font_size;
+  color: @panel_title_color;
+  text-align: center;
+  text-shadow: 0 1px white;
+  background: @panel_title_back_color;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 3px 3px 0 0;
+  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+  -webkit-box-shadow: 0 1px whitesmoke;
+  box-shadow: 0 1px whitesmoke;
+}
+
+// -------------------------------------------------------------------------
+// Оформление панели, на которой находится информация страницы вкладки меню:
+// секции, новости, игроки, турниры.
+// -------------------------------------------------------------------------
+.data_panel {
+
+  position: relative;
+  margin: @panel_margin;
+  padding: 20px 20px 20px;
+  width: @window_width - 2 * @panel_margin;
+  background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+  }
+
+  h1 {
+    .panel_title_css;
+  }
+}
+
+// --------------------------------------------------
+// Переходящая цветовая заливка с угловым скруглением
+// --------------------------------------------------
+.color_fill {
+  position: relative;
+  display: inline-block;
+  margin: 0em .5em;
+  padding: 0.25em 1.25em;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -mos-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.color_fill:hover {
+  color: #fff !important;
+  border: none !important;
+}
+
+.color_fill:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 150%;
+  height: 250%;
+  top: 0em;
+  left: -150%;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -mos-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-border-top-right-radius: 100%;
+  -webkit-border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  z-index: -1;
+  border: none !important;
+}
+
+.color_fill:hover:before {
+  left: -50%;
+}
+
+// --------------------------------------------------
+// Оформление новостной страницы
+// --------------------------------------------------
+.news_item_css {
+  margin: 0;
+  padding: 15px;
+
+  .news_item_date {
+    font-size: @font_size_date_14;
+  }
+
+  .news_item_author {
+    font-size: @font_size_date_14;
+    margin-left: 25px;
+  }
+
+  .news_item_address {
+    line-height: 6;
+  }
+
+  .place_icon {
+    height: 72px;
+    width: 72px;
+    border-radius: 36px;
+  }
+
+  .address_text {
+    font-size: @font_size_city_13;
+    padding-left: 10px;
+  }
+}

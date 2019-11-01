@@ -1,0 +1,28 @@
+<script>
+    $(document).ready(function () {
+        for (let i = 0; i < tournaments_2019.length; i++) {
+            $('#main_tournament_info_template').tmpl(tournaments_2019[i]).appendTo('#main_tournaments_info_id');
+        }
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='main_tournament_info_template'>
+  <div class="main_tournament_css">
+    <p>
+      <small>
+        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+        ${date}
+        <span class="glyphicon glyphicon-ok-circle ${icon_ok_css}"
+          aria-hidden="true"></span>
+      </small>
+      <br>
+      <a href="#" class="${decoration_css}"
+        onclick="html_in_div('${news_ref}', '#main_id')">${name}</a>
+      <br>
+      <i>${city}</i>
+    </p>
+  </div>
+</script>
+
+<div id="main_tournaments_info_id">
+</div>

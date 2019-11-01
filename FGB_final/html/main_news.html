@@ -1,0 +1,51 @@
+<script>
+    $(document).ready(function () {
+        for (let i = 3; i >= 0; i--) {
+            $('#main_news_info_template').tmpl(news_2019[i]).appendTo('#main_news_info_id');
+        }
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='main_news_info_template'>
+  <div class="main_news_info_css row">
+    <div class="col-md-12">
+      <div class="news_block">
+        <div class="news_data">
+          <div class="news_img">
+            <a href="#">
+              <img src=${img} alt="">
+            </a>
+          </div>
+          <div class="news_info">
+            <p><small class="news_date">
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>${date}
+            </small></p>
+            <p><a href="#" class="news_title ${decoration_css}"
+              onclick="html_in_div('${news_ref}', '#main_id')">${title}</a></p>
+            <p class="news_text text-justify">${text}</p>
+          </div>
+        </div>
+        <div class="news_footer">
+          <div class="footer_ul">
+            <small class="footer_ul_li">
+              <span class="glyphicon glyphicon-user" aria-hidden="true">
+                ${author}
+              </span>
+            </small>
+          </div>
+          <!--ul>
+            <li>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+            </li>
+            <li>
+              <span class=" glyphicon glyphicon-comment" aria-hidden="true"></span>
+            </li>
+          </ul-->
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<div id="main_news_info_id">
+</div>

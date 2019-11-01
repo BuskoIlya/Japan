@@ -1,0 +1,49 @@
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        load_tournaments_data();
+        show_tabs_data();
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='tournament_template'>
+    <div class="chain_block">
+      <div class="chain_icon chain_icon_tournament">
+        <img src="${place_css}" alt="Picture">
+      </div>
+      <div class="chain_data chain_data_tournament">
+        <small style="vertical-align:top">
+          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+          ${date}
+          <span class="glyphicon glyphicon-user ${icon_ok_css}"" aria-hidden="true">${pc}</span>
+        </small>
+        <div style="text-align: center">
+          <a href="#" class="${decoration_css}" style="vertical-align:bottom"
+            onclick="html_in_div('${news_ref}', '#main_id')">${name}</a>
+        </div>
+        <div>
+        <i style="font-size: 13px">${address}</i>
+        </div>
+        <span class="chain_date">${city}</span>
+      </div>
+    </div>
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Турниры</h1>
+    <div class="tabs_panel">
+      <div>
+        <div class="tabs_panel_col" style="margin-right: 0">
+          <div class="tabs_menu">
+            <div class="active"><span class="light"></span><span>2019</span></div>
+            <div><span class="light"></span><span>2018</span></div>
+          </div>
+        </div>
+        <div class="tabs_panel_col" style="margin-left: 0; border-left: 1px solid #f3f3f3">
+          <ul class="tabs_data">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
