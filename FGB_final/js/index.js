@@ -44,8 +44,14 @@ function select_blue_color_our_players(table, arr, number) {
     $(table).find('tr').each(function (i, el) {
         let $tds = $(this).find('td');
         let val = $tds.eq(number).text();
-        if (val.includes('BLR') || val.includes('BELARUS') ||
+        let img_title = $(this).find('img').attr("title");
+        if (val.includes('Беларусь') ||
             val.includes('Минск') || val.includes('Витебск')) {
+            for (let i = 0; i < arr.length; i++) {
+                $tds.eq(arr[i]).addClass('select_our_player');
+            }
+        }
+        if (img_title != undefined && img_title.includes('Беларусь')) {
             for (let i = 0; i < arr.length; i++) {
                 $tds.eq(arr[i]).addClass('select_our_player');
             }

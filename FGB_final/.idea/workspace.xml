@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cc07da-297e-4e70-b5bb-9497057909a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/slider.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2018_03_23_minsk_cup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2018_11_30_blr_chp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_02_16_spb_chine_cup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_03_29_minsk_cup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_05_30_world_championship.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_08_30_korea_cup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_10_25_autumn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_11_22_blr_chp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_11_25_blr_pair_chp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/2019_12_20_christmas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/results_2018_03_23.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/results_2018_11_30.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/results_2019_02_16.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/results_2019_03_29.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/results_2019_05_30.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/news_archive/results_2019_08_30.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/template_news_item.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/template_slider.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/results.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bfg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bfg/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/countries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/news_archive/results_2019_05_30.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/news_archive/results_2019_05_30.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/news_archive/results_2019_08_30.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/news_archive/results_2019_08_30.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/results.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/results.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2019_05_30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/2019_05_30.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2019_08_30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/2019_08_30.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,10 +21,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/news.js">
+        <entry file="file://$PROJECT_DIR$/js/countries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="143" column="18" lean-forward="true" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
+            <state relative-caret-position="411">
+              <caret line="215" column="23" lean-forward="true" selection-start-line="215" selection-start-column="23" selection-end-line="215" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/results.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="195" column="27" lean-forward="true" selection-start-line="195" selection-start-column="27" selection-end-line="195" selection-end-column="27" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +57,8 @@
       <list>
         <option value="CSS File" />
         <option value="Less File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -74,7 +82,6 @@
         <option value="$PROJECT_DIR$/html/news_archive/results_2018_11_31.html" />
         <option value="$PROJECT_DIR$/html/news_archive/2018_11_31_blr_chp.html" />
         <option value="$PROJECT_DIR$/html/news_archive/results_2018_11_30.html" />
-        <option value="$PROJECT_DIR$/js/results.js" />
         <option value="$PROJECT_DIR$/html/news_archive/2019_11_22_blr_chp.html" />
         <option value="$PROJECT_DIR$/html/news_archive/2019_11_25_blr_pair_chp.html" />
         <option value="$PROJECT_DIR$/css/tabs_page.less" />
@@ -87,10 +94,8 @@
         <option value="$PROJECT_DIR$/css/slider.css" />
         <option value="$PROJECT_DIR$/css/slider.less" />
         <option value="$PROJECT_DIR$/js/slider.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/html/b_slider.html" />
         <option value="$PROJECT_DIR$/html/main.html" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/html/main_news.html" />
         <option value="$PROJECT_DIR$/html/news_archive/2019_02_16_spb_chine_cup.html" />
         <option value="$PROJECT_DIR$/html/template_slider.html" />
@@ -101,16 +106,13 @@
         <option value="$PROJECT_DIR$/html/news_archive/2019_08_30_korea_cup.html" />
         <option value="$PROJECT_DIR$/html/template_news_item.html" />
         <option value="$PROJECT_DIR$/js/news.js" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/FGB_final.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/js/flags.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/js/results.js" />
+        <option value="$PROJECT_DIR$/html/news_archive/results_2019_05_30.html" />
+        <option value="$PROJECT_DIR$/html/news_archive/results_2019_08_30.html" />
+        <option value="$PROJECT_DIR$/js/countries.js" />
       </list>
     </option>
   </component>
@@ -173,6 +175,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/html/news_archive" />
     <property name="list.type.of.created.stylesheet" value="Less" />
@@ -218,16 +221,19 @@
       <workItem from="1572113515285" duration="8913000" />
       <workItem from="1572155202292" duration="1641000" />
       <workItem from="1572544960079" duration="5372000" />
+      <workItem from="1572640446758" duration="5025000" />
+      <workItem from="1572674918340" duration="8851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75381000" />
+    <option name="totallyTimeSpent" value="89257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29830235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30800325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,20 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/news_archive/results_2019_05_30.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/news_archive/results_2019_08_30.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/main_tournaments.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -387,13 +379,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/slider.css" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/news_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -432,16 +417,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/tabs.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/results.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2173">
-          <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/tournaments_page.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -517,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/news_archive/2019_03_29_minsk_cup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -580,8 +548,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/news.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="144" column="29" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/results.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="195" column="27" lean-forward="true" selection-start-line="195" selection-start-column="27" selection-end-line="195" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/news_archive/results_2019_05_30.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/news_archive/results_2019_08_30.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="143" column="18" lean-forward="true" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/countries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="215" column="23" lean-forward="true" selection-start-line="215" selection-start-column="23" selection-end-line="215" selection-end-column="23" />
         </state>
       </provider>
     </entry>

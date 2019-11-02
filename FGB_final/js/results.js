@@ -147,6 +147,7 @@ class Player_2019_05_30 {
         this.number = number;
         this.player = player
         this.country = country;
+        this.country_flag = Country.cf_map_m.get(country);
         this.game1 = game1;
         this.game2 = game2;
         this.game3 = game3;
@@ -186,6 +187,7 @@ class Player_2019_08_30 {
         this.number = number;
         this.player = player
         this.country = country;
+        this.country_flag = Country.cf_map_m.get(country);
         this.game1 = game1;
         this.game2 = game2;
         this.game3 = game3;
