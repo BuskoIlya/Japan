@@ -1,5 +1,9 @@
 class Country {}
 
+Country.flag_sssr = "images/flags-normal/sssr.gif";
+Country.flag_sssr_m = "images/flags-mini/sssr.gif";
+Country.flag_yu = "images/flags-normal/yu.jpg";
+Country.flag_yu_m = "images/flags-mini/yu.jpg";
 Country.flag_belarus = "images/flags-normal/by.png";
 Country.flag_belarus_m = "images/flags-mini/by.png";
 Country.flag_cyprus = "images/flags-normal/cy.png";
@@ -140,8 +144,13 @@ Country.flag_panama = "images/flags-normal/pa.png";
 Country.flag_panama_m = "images/flags-mini/pa.png";
 Country.flag_north_kore = "images/flags-normal/kp.png";
 Country.flag_north_kore_m = "images/flags-mini/kp.png";
+Country.flag_greece = "images/flags-normal/gr.png";
+Country.flag_greece_m = "images/flags-mini/gr.png";
+
 
 Country.cf_map_m = new Map();
+Country.cf_map_m.set("СССР", Country.flag_sssr_m);
+Country.cf_map_m.set("Югославия", Country.flag_yu_m);
 Country.cf_map_m.set("Беларусь", Country.flag_belarus_m);
 Country.cf_map_m.set("Кипр", Country.flag_cyprus_m);
 Country.cf_map_m.set("Испания", Country.flag_spain_m);
@@ -162,9 +171,11 @@ Country.cf_map_m.set("Япония", Country.flag_japan_m);
 Country.cf_map_m.set("Франция", Country.flag_france_m);
 Country.cf_map_m.set("Новая Зеландия", Country.flag_new_zeland_m);
 Country.cf_map_m.set("Голландия", Country.flag_netherlands_m);
+Country.cf_map_m.set("Нидерланды", Country.flag_netherlands_m);
 Country.cf_map_m.set("Вьетнам", Country.flag_vietnam_m);
 Country.cf_map_m.set("Польша", Country.flag_poland_m);
 Country.cf_map_m.set("Чехия", Country.flag_czechia_m);
+Country.cf_map_m.set("Чехословакия", Country.flag_czechia_m);
 Country.cf_map_m.set("Израиль", Country.flag_izrail_m);
 Country.cf_map_m.set("Таиланд", Country.flag_thailand_m);
 Country.cf_map_m.set("Хорватия", Country.flag_croatia_m);
@@ -174,6 +185,7 @@ Country.cf_map_m.set("Германия", Country.flag_germany_m);
 Country.cf_map_m.set("Австралия", Country.flag_australia_m);
 Country.cf_map_m.set("Бельгия", Country.flag_belgium_m);
 Country.cf_map_m.set("Англия", Country.flag_england_m);
+Country.cf_map_m.set("Великобритания", Country.flag_england_m);
 Country.cf_map_m.set("Финляндия", Country.flag_finland_m);
 Country.cf_map_m.set("Словения", Country.flag_slovenia_m);
 Country.cf_map_m.set("Чили", Country.flag_chili_m);
@@ -212,5 +224,6 @@ Country.cf_map_m.set("Северная Корея", Country.flag_north_kore_m);
 Country.cf_map_m.set("Панама", Country.flag_panama_m);
 Country.cf_map_m.set("Люксембург", Country.flag_lux_m);
 Country.cf_map_m.set("Перу", Country.flag_peru_m);
+Country.cf_map_m.set("Греция", Country.flag_greece_m);
 
 Object.freeze(Country);

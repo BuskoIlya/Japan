@@ -11,6 +11,7 @@ var tournaments_2018 = [
         'place_css': 'images/places/minsk.jpg',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'pc': '10',
+        'tournament_number': 'tournament-2018-03-23',
     },
     {
         'date': 'Ноя. 30, Дек. 2',
@@ -24,6 +25,7 @@ var tournaments_2018 = [
         'place_css': 'images/places/minsk.jpg',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'pc': '12',
+        'tournament_number': 'tournament-2018-11-30',
     }
 ];
 var tournaments_2019 = [
@@ -39,6 +41,7 @@ var tournaments_2019 = [
         'place_css': 'images/places/spb.jpg',
         'address': 'Россия, г. Санкт-Петербург, Лермонтовский пр., 43/1, отель Азимут, 18 этаж.',
         'pc': '105',
+        'tournament_number': 'tournament-2019-02-16',
     },
     {
         'date': 'Март 29,31',
@@ -52,19 +55,21 @@ var tournaments_2019 = [
         'place_css': 'images/places/minsk.jpg',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'pc': '10',
+        'tournament_number': 'tournament-2019-03-29',
     },
     {
         'date': 'Май 30 - Июнь 7',
         'name': 'Чемпионат Мира',
-        'city': '(Мацуе, Япония)',
+        'city': '(Мацуэ, Япония)',
         'description': 'Описание...',
         'decoration_css': 'color_fill blue',
         'back_color': 'world_color_back_css',
         'news_ref': 'html/news_archive/2019_05_30_world_championship.html',
         'icon_ok_css': 'icon_ok_active',
         'place_css': 'images/places/tokio.jpg',
-        'address': 'Япония, Префектура Шиманэ, г. Мацуэ, 島根県松江市殿町.',
+        'address': 'Япония, Префектура Симанэ, г. Мацуэ, 島根県松江市殿町.',
         'pc': '59',
+        'tournament_number': 'tournament-2019-05-30',
     },
     {
         'date': 'Авг. 31 - Сен. 6',
@@ -78,6 +83,21 @@ var tournaments_2019 = [
         'place_css': 'images/places/seul.jpg',
         'address': 'Южная Корея, г. Сеул, 영월스포츠파크 실내체육관.',
         'pc': '62',
+        'tournament_number': 'tournament-2019-08-30',
+    },
+    {
+        'date': 'Сентябрь 20,27',
+        'name': 'Belarus Study Open',
+        'city': '(Минск)',
+        'description': 'Описание...',
+        'decoration_css': 'color_fill green',
+        'back_color': 'blr_color_back_css',
+        'news_ref': 'html/news_archive/2019_09_20_study.html',
+        'icon_ok_css': 'icon_ok_active',
+        'place_css': 'images/places/minsk.jpg',
+        'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
+        'pc': '26',
+        'tournament_number': 'tournament-2019-09-20',
     },
     {
         'date': 'Октябрь 25',
@@ -87,10 +107,11 @@ var tournaments_2019 = [
         'decoration_css': 'color_fill green',
         'back_color': 'blr_color_back_css',
         'news_ref': 'html/news_archive/2019_10_25_autumn.html',
-        'icon_ok_css': 'icon_ok_inactive',
+        'icon_ok_css': 'icon_ok_active',
         'place_css': 'images/places/minsk.jpg',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
-        'pc': '',
+        'pc': '27',
+        'tournament_number': 'tournament-2019-10-25',
     },
     {
         'date': 'Ноябрь 22,23',
@@ -99,32 +120,12 @@ var tournaments_2019 = [
         'description': 'Описание...',
         'decoration_css': 'color_fill green',
         'back_color': 'blr_color_back_css',
-        'news_ref': 'html/news_archive/2019_11_22_blr_chp.html',
-        'icon_ok_css': 'icon_ok_inactive',
+        'news_ref': 'html/news_archive/2019_11_23_blr_chp.html',
+        'icon_ok_css': 'icon_ok_active',
         'place_css': 'images/places/minsk.jpg',
-        'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
-        'pc': '',
-    },
-    /*{
-        'date': 'Ноябрь 25',
-        'name': 'Cемейный турнир',
-        'city': '(Минск)',
-        'description': 'Описание...',
-        'decoration_css': 'color_fill green',
-        'back_color': 'blr_color_back_css',
-    },*/
-    {
-        'date': 'Ноя. 25, Дек. 2',
-        'name': 'ЧБ по Парному Го',
-        'city': '(Минск)',
-        'description': 'Описание...',
-        'decoration_css': 'color_fill green',
-        'back_color': 'blr_color_back_css',
-        'news_ref': 'html/news_archive/2019_11_25_blr_pair_chp.html',
-        'icon_ok_css': 'icon_ok_inactive',
-        'place_css': 'images/places/minsk.jpg',
-        'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
-        'pc': '',
+        'address': 'г. Минск, ул. Стариновская 37, клуб сёги Гинкаммури.',
+        'pc': '17',
+        'tournament_number': 'tournament-2019-11-23',
     },
     {
         'date': 'Декабрь 20,22',
@@ -138,6 +139,9 @@ var tournaments_2019 = [
         'place_css': 'images/places/minsk.jpg',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'pc': '',
+        'tournament_number': 'tournament-2019-12-20',
+        'ref_name': 'фгб.бел',
+        'author': 'Грунковский Юрий',
     }
 ];
 
@@ -172,7 +176,7 @@ function show_tabs_data() {
         (!window.requestAnimationFrame)
             ? setTimeout(function () {
                 showBlocks(timelineBlocks, offset);
-            }, 100)
+            }, 500)
             : window.requestAnimationFrame(function () {
                 showBlocks(timelineBlocks, offset);
             });

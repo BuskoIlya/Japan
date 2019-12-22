@@ -1,7 +1,25 @@
 <!DOCTYPE html>
-<html lang="en/ru">
+<html lang="en/ru" prefix="og: http://ogp.me/ns#">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
+
+  <title>Федерация Го Беларуси</title>
+  <meta name="description" content="ФГБ — сайт федерации го Беларуси. Все события
+  внутри страны и в мире, рассказы о го, книги и видео разборы партий."/>
+  <meta name="keywords" content="Беларусь, го, спорт, Китай, искусство, шахматы,
+  философия"/>
+  <meta name="viewport" content="width=1000, maximum-scale=4, user-scalable=yes"/>
+  <link rel="shortcut icon" type="image/x-icon"
+        href="images/vk/fgb_icon.jpg"/>
+
+  <meta property="og:url" content="http://фгб.бел"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="ФГБ: Беларусь, го, искусство, спорт, философия"/>
+  <meta property="vk:image" content="images/vk/vk_fgb.jpg"/>
+  <meta property="og:image" content="images/vk/vk_fgb.jpg"/>
+  <meta property="og:description" content="ФГБ — сайт федерации го Беларуси. Все события
+  внутри страны и в мире, рассказы о го, книги и видео разборы партий."/>
+
   <title></title>
 
   <link rel="stylesheet"
@@ -12,12 +30,13 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less">
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?13">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?13">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?13">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?13">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?13">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?13">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?13">
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -27,21 +46,38 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js"></script>
-  <script type="text/JavaScript" src="js/index.js"></script>
-  <script type="text/JavaScript" src="js/tabs.js"></script>
+  <script type="text/JavaScript" src="js/countries.js?12"></script>
+  <script type="text/JavaScript" src="js/index.js?12"></script>
+  <script type="text/JavaScript" src="js/tabs.js?12"></script>
 
-  <script type="text/JavaScript" src="js/news.js"></script>
-  <script type="text/JavaScript" src="js/tournaments.js"></script>
-  <script type="text/JavaScript" src="js/players.js"></script>
-  <script type="text/JavaScript" src="js/results.js"></script>
-  <script type="text/JavaScript" src="js/slider.js"></script>
+  <script type="text/JavaScript" src="js/persons.js?12"></script>
+  <script type="text/JavaScript" src="js/contacts.js?12"></script>
+  <script type="text/JavaScript" src="js/matches.js?12"></script>
+  <script type="text/JavaScript" src="js/news.js?12"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?12"></script>
+  <script type="text/JavaScript" src="js/players.js?12"></script>
+  <script type="text/JavaScript" src="js/results.js?12"></script>
+  <script type="text/JavaScript" src="js/slider.js?12"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?12"></script>
+  <script type="text/JavaScript" src="js/world_data.js?12"></script>
+  <script type="text/JavaScript" src="js/schools.js?12"></script>
+  <script type="text/JavaScript" src="js/stories.js?12"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?12"></script>
 
   <script>
       $(document).ready(function () {
+          if (window.location.href.includes("federationgo")) {
+              window.location.href = "http://фгб.бел";
+          }
           html_in_div("html/menu.html", "#menu_id");
-          html_in_div("html/main.html", "#main_id");
           html_in_div("html/footer.html", "#footer_id");
+
+          let searchParams = new URLSearchParams(window.location.search)
+          let page = searchParams.get('page');
+          if (page == null) {
+              page = 'main';
+          }
+          html_in_div(page_map.get(page), "#main_id");
       });
   </script>
 </head>

@@ -12,41 +12,43 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=""><a href="#" onclick="html_in_div('./html/main.html', '#main_id')">
-          Главная
-        </a></li>
+        <li class=""><a href="?page=main">Главная</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Федерация<b
               class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#"
-                   onclick="html_in_div('./html/clubs_page.html', '#main_id')">
-              Секции
-            </a></li>
-            <li><a href="#"
-                   onclick="html_in_div('./html/news_page.html', '#main_id')">
-              Новости
-            </a></li>
+            <li><a href="?page=contacts">Контакты</a></li>
+            <li><a href="?page=ranks">Система Рангов</a></li>
+            <li><a href="?page=info-board">Доска информации</a></li>
+            <li><a href="?page=news">Новости</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Игроки<b
               class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#" onclick="html_in_div('./html/players_page.html', '#main_id')">
-              Игроки (рейтин-лист)
-            </a></li>
-            <li><a href="#" onclick="html_in_div('./html/tournaments_page.html', '#main_id')">
-              Турниры
-            </a></li>
+            <li><a href="?page=by-players">Игроки (ЕГФ рейтинг-лист)</a></li>
+            <li><a href="?page=tournaments">Турниры</a></li>
+            <li><a href="?page=players-lib">Библиотека игроков</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Международные турниры<b
+              class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="?page=eu-19/20">Командный чемпионат Европы 2019/2020</a></li>
+            <li><a href="?page=eus">Чемпионаты Европы</a></li>
+            <li><a href="?page=wagc">Чемпионаты мира</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Обучение<b
               class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Литература</a></li>
+            <li><a href="?page=schools">Секции</a></li>
+            <li><a href="?page=go-stories">Рассказы о Го</a></li>
+            <li><a href="?page=go-manual">Справочник Го</a></li>
+            <!--li><a href="?page=go-books">Литература</a></li-->
           </ul>
         </li>
       </ul>

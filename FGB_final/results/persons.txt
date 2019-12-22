@@ -1,0 +1,5 @@
+Динерштейн Александр Григорьевич,images/persons/diner.jpg,7 дан/3 дан про,7-ый чемпион Европы,https://vk.com/id6383896,pagehtml,pink,images/flags-mini/ru.png,Россия,Казань
+Сурма Матеуш,images/persons/surma_0.jpg,7 дан/2 дан про,3-ый чемпион Польши,https://vk.com/id518982209,pagehtml,blue,images/flags-mini/pl.png,Польша,Дзимеж
+Кожунков Алексей,images/persons/kozh.jpg,4 дан,Руководитель клуба го "сэнтэ" - одного из сильнейших в России,https://vk.com/neyasan,pagehtml,pink,images/flags-mini/ru.png,Россия,Жуковский
+Такагава Сюкаку,images/persons/no_photo.png,9 дан про,Титул Хонимбо | Чемпион НихонКиин | Титул Мэйдзин,,pagehtml,blue,images/flags-mini/jp.png,Япония,Вакаяма
+Фролов Андрей Владимирович,images/persons/frol.jpg,,Руководитель клуба го "ранка",https://vk.com/id3853874,pagehtml,pink,images/flags-mini/ru.png,Россия,Санкт-Петербург

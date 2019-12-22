@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        html_in_div("html/world_archive/eu_personal.html", "#eu_personal_tab_panel_id");
+        html_in_div("html/world_archive/eu_command.html", "#eu_command_tab_panel_id");
+        setTimeout(function(){calculate_height();},100);
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Чемпионаты Европы</h1>
+    <div class="tabs_panel">
+      <div>
+        <div class="tabs_panel_col" style="margin-right: 0">
+          <div class="tabs_menu">
+            <div class="active"><span class="light"></span><span>Личный</span></div>
+            <div><span class="light"></span><span>Командный</span></div>
+          </div>
+        </div>
+        <div class="tabs_panel_col" style="margin-left: 0; border-left: 1px solid #f3f3f3;
+            width: 80%; line-height: 2; text-align: justify;">
+          <ul class="tabs_data">
+            <li id="eu_personal_tab_panel_id" class="active" style="width:100%"></li>
+            <li id="eu_command_tab_panel_id" style="width:100%"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

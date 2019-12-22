@@ -1,0 +1,24 @@
+<script>
+    $(document).ready(function () {
+        $.get('html/template_person_card.html', function (template) {
+            for (let i = 0; i < 4; i++) {
+                $(template).tmpl(persons[i]).appendTo('#persons_id_row1');
+            }
+            for (let i = 4; i < persons.length; i++) {
+                $(template).tmpl(persons[i]).appendTo('#persons_id_row2');
+            }
+        });
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Библиотека игроков</h1>
+    <div id="persons_id">
+      <div id="persons_id_row1" class="row" style="margin-bottom: 15px">
+      </div>
+      <div id="persons_id_row2" class="row">
+      </div>
+    </div>
+  </div>
+</div>

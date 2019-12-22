@@ -1,0 +1,45 @@
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        html_in_div("html/go_dictionary.html", "#go_dictionary_tab_panel_id");
+        html_in_div("html/go_rules.html", "#go_rules_tab_panel_id");
+        html_in_div("html/go_first_game.html", "#go_first_game_tab_panel_id");
+        html_in_div("html/go_eyes.html", "#go_eyes_tab_panel_id");
+        html_in_div("html/go_ko.html", "#go_ko_tab_panel_id");
+        html_in_div("html/go_sente_gote.html", "#go_sente_gote_tab_panel_id");
+        html_in_div("html/go_19_19.html", "#go_19_19_tab_panel_id");
+        setTimeout(function(){calculate_height();},500);
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Справочник го</h1>
+    <div class="tabs_panel">
+      <div>
+        <div class="tabs_panel_col" style="margin-right: 0">
+          <div class="tabs_menu">
+            <div class="active"><span class="light"></span><span>Правила</span></div>
+            <div><span class="light"></span><span>Термины</span></div>
+            <div><span class="light"></span><span>Первая игра</span></div>
+            <div><span class="light"></span><span>Глаза</span></div>
+            <div><span class="light"></span><span>Ко</span></div>
+            <div><span class="light"></span><span>Сентэ/Готэ</span></div>
+            <div><span class="light"></span><span>19 на 19</span></div>
+          </div>
+        </div>
+        <div class="tabs_panel_col" style="margin-left: 0; border-left: 1px solid #f3f3f3;
+            width: 80%; line-height: 2; text-align: justify;">
+          <ul class="tabs_data">
+            <li id="go_rules_tab_panel_id" class="active"></li>
+            <li id="go_dictionary_tab_panel_id"></li>
+            <li id="go_first_game_tab_panel_id"></li>
+            <li id="go_eyes_tab_panel_id"></li>
+            <li id="go_ko_tab_panel_id"></li>
+            <li id="go_sente_gote_tab_panel_id"></li>
+            <li id="go_19_19_tab_panel_id"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<script>
+    $(document).ready(function () {
+        for (let i = 0; i < 3; i++) {
+            $("#story_card_template").tmpl(stories[i]).appendTo('#story_id_row1');
+            fill_key_words("#keys_id-" + (i+1), stories[i].key_words);
+        }
+        for (let i = 3; i < stories.length; i++) {
+            $("#story_card_template").tmpl(stories[i]).appendTo('#story_id_row2');
+            fill_key_words("#keys_id-" + (i+1), stories[i].key_words);
+        }
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='story_card_template'>
+  <div class="col-md-4">
+  <div class="story_card_css">
+    <p>
+      <p><img src=${photo} alt="" class="photo"></p>
+      <a href="?page=${story_page}" class="color_fill pink">${title}</a>
+      <p>
+        <small style="margin:0">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"
+            style="vertical-align: super"></span>
+          <a href="?page=${author_ref}" class="color_fill green" style="padding: 0 5px">
+              ${author}
+          </a>
+        </small>
+      </p>
+      <p id="keys_id-${number}" style="line-height:1.4"></p>
+    </p>
+  </div>
+  </div>
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Рассказы о го</h1>
+    <div id="story_id">
+      <div id="story_id_row1" class="row" style="margin-bottom: 15px">
+      </div>
+      <div id="story_id_row2" class="row" style="margin-bottom: 15px">
+      </div>
+      <div id="story_id_row3" class="row" style="margin-bottom: 15px">
+      </div>
+    </div>
+  </div>
+</div>
+

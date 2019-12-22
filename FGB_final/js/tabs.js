@@ -14,3 +14,14 @@ $(document).on("click", ".tabs_panel .tabs_menu div", function () {
         $(".tabs_panel ul").height(listItemHeight + "px");
     }
 });
+
+function calculate_height() {
+    let listItemHeight = $(".tabs_panel ul")
+        .find("li:eq(" + 0 + ")")
+        .innerHeight();
+    $(".tabs_panel ul").height(listItemHeight + "px");
+}
+
+function set_height(id, h) {
+    $("id").height(h + "px");
+}

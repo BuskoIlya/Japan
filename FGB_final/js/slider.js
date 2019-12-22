@@ -2,20 +2,20 @@ jssor_1_slider_init = function () {
 
     var jssor_1_SlideshowTransitions = [
         {
-            $Duration: 1200,
+            $Duration: 3200,
             $Zoom: 1,
             $Easing: {$Zoom: $Jease$.$InCubic, $Opacity: $Jease$.$OutQuad},
             $Opacity: 2
         },
         {
-            $Duration: 1000,
+            $Duration: 3000,
             $Zoom: 11,
             $SlideOut: true,
             $Easing: {$Zoom: $Jease$.$InExpo, $Opacity: $Jease$.$Linear},
             $Opacity: 2
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             $Zoom: 1,
             $Rotate: 1,
             $During: {$Zoom: [0.2, 0.8], $Rotate: [0.2, 0.8]},
@@ -28,7 +28,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.5}
         },
         {
-            $Duration: 1000,
+            $Duration: 3000,
             $Zoom: 11,
             $Rotate: 1,
             $SlideOut: true,
@@ -41,7 +41,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.8}
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             x: 0.5,
             $Cols: 2,
             $Zoom: 1,
@@ -55,7 +55,7 @@ jssor_1_slider_init = function () {
             $Opacity: 2
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             x: 4,
             $Cols: 2,
             $Zoom: 11,
@@ -70,7 +70,7 @@ jssor_1_slider_init = function () {
             $Opacity: 2
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             x: 0.6,
             $Zoom: 1,
             $Rotate: 1,
@@ -80,7 +80,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.5}
         },
         {
-            $Duration: 1000,
+            $Duration: 3000,
             x: -4,
             $Zoom: 11,
             $Rotate: 1,
@@ -95,7 +95,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.8}
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             x: -0.6,
             $Zoom: 1,
             $Rotate: 1,
@@ -105,7 +105,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.5}
         },
         {
-            $Duration: 1000,
+            $Duration: 3000,
             x: 4,
             $Zoom: 11,
             $Rotate: 1,
@@ -120,7 +120,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.8}
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             x: 0.5,
             y: 0.3,
             $Cols: 2,
@@ -139,7 +139,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.7}
         },
         {
-            $Duration: 1000,
+            $Duration: 3000,
             x: 0.5,
             y: 0.3,
             $Cols: 2,
@@ -159,7 +159,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.7}
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             x: -4,
             y: 2,
             $Rows: 2,
@@ -178,7 +178,7 @@ jssor_1_slider_init = function () {
             $Round: {$Rotate: 0.7}
         },
         {
-            $Duration: 1200,
+            $Duration: 3200,
             x: 1,
             y: 2,
             $Cols: 2,

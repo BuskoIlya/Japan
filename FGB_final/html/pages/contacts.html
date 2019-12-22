@@ -1,0 +1,24 @@
+<script>
+    $(document).ready(function () {
+        $.get('html/template_contact_card.html', function (template) {
+            for (let i = 0; i < 4; i++) {
+                $(template).tmpl(contacts[i]).appendTo('#contacts_id_row1');
+            }
+            for (let i = 4; i < contacts.length; i++) {
+                $(template).tmpl(contacts[i]).appendTo('#contacts_id_row2');
+            }
+        });
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Контакты</h1>
+    <div id="contacts_id">
+      <div id="contacts_id_row1" class="row" style="margin-bottom: 15px">
+      </div>
+      <div id="contacts_id_row2" class="row">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+Супонев Александр Михайлович,images/persons/sup_al.jpg,2 дан,Руководитель по связям с международными организациями го,+37529-564-53-88,bgf_minsk@hotmail.com,https://vk.com/id60193742,pagehtml
+Бусько Илья Владимирович,images/persons/bus_il.jpg,2 дан,Разработчик и руководитель сайта федерации го Беларуси,+7-911-963-26-80,trassae95st@mail.ru,https://vk.com/id41175,pagehtml
+Грунковский Юрий Анатольевич,images/persons/grun_ur.jpg,2 кю,Организатор турниров го в Минске,+37529-369-92-94,почта,https://vk.com/id31645800,pagehtml
+Герасютин Никита Эдуардович,images/persons/ger_nik.jpg,2 кю,Капитан команды Беларуси в чемпионатах Европы,тел,почта,https://vk.com/id52172986,pagehtml
+Зиновенков Евгений Викторович,images/persons/zin_ev.jpg,3 кю,Руководитель детского клуба го в СШ№9 г. Минска,+37529-707-79-85,почта,https://vk.com/e.zinovenkov,pagehtml
+Илькевич Анастасия,images/persons/il_an.jpg,5 кю,Контактное лицо по связям с Литовской федерацией го,тел,почта,https://vk.com/id147790741,pagehtml
+Пивнев Руслан Михайлович,images/persons/piv.jpg,7 кю,Руководитель секции го HAGAKURE,+37525-968-20-68,minskgogame@gmail.com,https://vk.com/minsk_gogamer,pagehtml

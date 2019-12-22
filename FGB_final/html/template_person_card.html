@@ -1,0 +1,19 @@
+<script type='text/x-jquery-tmpl' id='person_card_template'>
+  <div class="col-md-3">
+  <div class="person_card_css">
+    <p>
+      <p><img src=${photo} alt="" class="photo"></p>
+      <a href="#" class="color_fill ${color_css}"
+        onclick="html_in_div('${personal_page}', '#main_id')">${name}</a>
+      <p style="font-size: 14px;margin-bottom:5px">
+        <img src=${flag} title=${country} width="30" height="20px"
+          style="margin-right:5px;vertical-align:sub">
+        ${city}
+      </p>
+      <p><small>${rank}</small></p>
+      <p style="line-height:1.5"><small>${description}</small></p>
+      <a href="${vk}"><img src='images/vk_icon.jpg' class="vk_icon_css"></img></a>
+    </p>
+  </div>
+  </div>
+</script>

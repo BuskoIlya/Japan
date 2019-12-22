@@ -1,0 +1,52 @@
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        html_in_div("html/world_archive/eu_19_20_a.html", "#eu_19_20_a_tab_panel_id");
+        html_in_div("html/world_archive/eu_19_20_b.html", "#eu_19_20_b_tab_panel_id");
+        html_in_div("html/world_archive/eu_19_20_c.html", "#eu_19_20_c_tab_panel_id");
+        html_in_div("html/world_archive/eu_19_20_d.html", "#eu_19_20_d_tab_panel_id");
+        /*setTimeout(function () {
+            calculate_height();
+        }, 200);*/
+        set_height(".tabs_panel ul", 2900);
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Командный чемпионат Европы 2019/2020</h1>
+    <div class="tabs_panel">
+      <div>
+        <div class="tabs_panel_col" style="margin-right: 0">
+          <div class="tabs_menu">
+            <div><span class="light"></span><span>A</span></div>
+            <div><span class="light"></span><span>B</span></div>
+            <div><span class="light"></span><span>C</span></div>
+            <div class="active"><span class="light"></span><span>D</span></div>
+          </div>
+        </div>
+        <div class="tabs_panel_col" style="margin-left: 0; border-left: 1px solid #f3f3f3;
+            width: 90%; line-height: 2; text-align: justify;">
+          <p style="margin: 0 10px">
+            &emsp;<strong>До</strong> 2011 г. команд было мало и разрешалось иметь по нескольку
+            команд от страны. При этом, соревнования проводились очно летом, т.к. для этого
+            хватало одной/двух недель. С 2011 г. разрешается иметь только одну команду от
+            страны, стран участниц стало намного больше и теперь летом очно проходит
+            только финальная часть, а отборочная к этому финалу проходит в течение года
+            заочно по интернету. Группы поделены на четыре лиги по силе команд: в лиге А -
+            самые сильные, в лиге D - самые слабые. Четыре сильнейшие команды лиги А летом
+            в очном поединке разыгрывают первые три места. Первая команда лиг B, C, D поднимается
+            на уровень выше, а последняя A, B, C опускается на уровень ниже. Вторые и
+            предпоследние команды соприкасающихся лиг играют матч за право пройти/остаться
+            в более сильной лиге.
+          </p>
+          <ul class="tabs_data" style="height: 2900px !important;">
+            <li id="eu_19_20_a_tab_panel_id" style="width:100%"></li>
+            <li id="eu_19_20_b_tab_panel_id" style="width:100%"></li>
+            <li id="eu_19_20_c_tab_panel_id" style="width:100%"></li>
+            <li id="eu_19_20_d_tab_panel_id" class="active" style="width:100%"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

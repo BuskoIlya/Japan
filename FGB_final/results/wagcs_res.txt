@@ -1,0 +1,40 @@
+1,1979,Япония,Токио,Nieh Wei-ping,Китай,Chen Tsu-te,Китай,Chen Chai-jui,Китай
+2,1980,Япония,Токио,Imamura Fumiaki,Япония,Chen Chai-jui,Китай,Yasunaga Hajime,Япония
+3,1981,Япония,Токио,Shao Zhen-zhong,Китай,Ma Xiao-chung,Китай,Murakami Bunsho,Япония
+4,1982,Япония,Токио,Tsao Ta-yuan,Китай,Yang Chin-Hua,Китай,Hirata Hironori,Япония
+5,1983,Япония,Осака,Ma Xiaochun,Китай,Miura Hiroshi,Япония,Fumiaki Imamura,Япония
+6,1984,Япония,Токио,Wang Qun,Китай,Yoo Chang-Hyeok,Южная Корея,Hirata Hironori,Япония
+7,1985,Япония,Токио,Wang Jian Hong,Китай,Chan Ka Yui,Гонконг,Kikuchi Yasuro,Япония
+8,1986,Япония,Токио,Chan Ka-Yui,Гонконг,Kikuchi Yasuro,Япония,Song Xue Lin,Китай
+9,1987,Китай,Пекин,Imamura Fumiaki,Япония,Yu Bin,Китай,Lee Kwan Chol,Южная Корея
+10,1988,Япония,Токио,Zhang Wendong,Китай,Imamura Fumiaki,Япония,Schlemper Ronald,Голландия
+11,1989,Япония,Нагоя,Che Zewu,Китай,Tsai Wenhe,Тайвань,Hirata Hironori,Япония
+12,1990,Япония,Хиросима,Chang Hao,Китай,Ann Gwanwook,Южная Корея,Miura Hiroshi,Япония
+13,1991,Япония,Каназава,Imamura Fumiaki,Япония,Hsia Hsien-yu,Тайвань,Schlemper Ronald,Голландия
+14,1992,Япония,Чиба,Kikuchi Yasuro,Япония,Lee Yongman,Южная Корея,Han Qi Yu,Китай
+15,1993,Япония,Фукуока,Sun Yiguo,Китай,Seo Soonjoo,Южная Корея,Hirata Hironori,Япония
+16,1994,Япония,Киото,Satoshi Hiraoka,Япония,Chou Chun-hsun,Тайвань,Wang Cun,Китай
+17,1995,Япония,Токио,Hironori Hirata,Япония,Shi Hongyi,Китай,Kan Ying,Гонконг
+18,1996,Япония,Омачи,Jun Liu,Китай,Hironori Hirata,Япония,Yong-man Yi,Южная Корея
+19,1997,Япония,Саппоро,Jun Liu,Китай,Hideyuki Sakai,Япония,Yeong-sam Mun,Южная Корея
+20,1998,Япония,Токио,Ch`an-u Kim,Южная Корея,Satoshi Hiraoka,Япония,Wendong Zhao,Китай
+21,1999,Япония,Оита,Chae-seong Yu,Южная Корея,Hideyuki Sakai,Япония,Pong-il Ri,Северная Корея
+22,2000,Япония,Сендай,Hideyuki Sakai,Япония,Ho-kil Pak,Северная Корея,Maleun-Saem Hong,Южная Корея
+23,2001,Япония,Хюга,Daichun Li,Китай,Moriei Kanazawa,Япония,Dong-Ming Liu,Австралия
+24,2002,Япония,Хида,Li Fu,Китай,Maleun-Saem Hong,Южная Корея,Yasuro Kikuchi,Япония
+25,2004,Япония,Курасики,Kang-wuk Yi,Южная Корея,Youzheng Lai,Тайвань,Li Fu,Китай
+26,2005,Япония,Нагоя,Yuqing Hu,Китай,Tae-weon Cho,Северная Корея,Chengrui Yu,Тайвань
+27,2006,Япония,Сасебо,Satoshi Hiraoka,Япония,Weixing Tang,Китай,Tae-weon Cho,Северная Корея
+28,2007,Япония,Токио,Ziteng Shan,Китай,Tong-ha U,Северная Корея,Hironobu Mori,Япония
+29,2008,Япония,Токио,Sung-Bong Ha,Южная Корея,Yuzheng Guo,Китай,Fernando Aguilar,Аргентина
+30,2009,Япония,Сизуока,Yuqing Hu,Китай,Shin-hwan Yu,Северная Корея,Naisan Chan,Гонконг
+31,2010,Китай,Ханьджоу,Hong-suk Song,Южная Корея,Chen Wang,Китай,Tae-weon Cho,Северная Корея
+32,2011,Япония,Мацуэ,Baoxiang Bai,Китай,Woo-Soo Choi,Северная Корея,Eric Lui,США
+33,2012,Китай,Гуаньждоу,Zhijian Qiao,Китай,Hyunjoon Lee,Южная Корея,Cheng-Hsun Chen,Тайвань
+34,2013,Япония,Сендай,Choi Hyunjae,Южная Корея,Hu Yuqing,Китай,Kachanovskyi Artem,Украина
+35,2014,Южная Корея,Кёнджу,Chan Yi-Tien,Тайвань,Wei Tae-Woong,Южная Корея,Ruoran Wang,Китай
+36,2015,Таиланд,Банкок,Kim Changhun,Южная Корея,Hu Aohua,Китай,Lai Jyunfu,Тайвань
+37,2016,Китай,Уси,Baoxiang Bai,Китай,Kibaek Kim,Южная Корея,Chia Cheng Hsu,Тайвань
+38,2017,Китай,Гуйян,Baoxiang Bai,Китай,Sang-bin Lee,Южная Корея,Yu-Cheng Lai,Тайвань
+39,2018,Япония,Токио,Yi-Tien Chan,Тайвань,Sangcheon Kim,Южная Корея,Chen Wang,Китай
+40,2019,Япония,Мацуэ,Chen Wang,Китай,Jaesung Lee,Южная Корея,Nai San Chan,Гонконг

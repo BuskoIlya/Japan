@@ -1,0 +1,5 @@
+1,Легенда,Фролов Андрей Владимирович,images/stories/legend.jpg,https://www.youtube.com/embed/AYCRPocekwY,Тибет|Китай|Корея|Япония|Нидерланды,legend,players-lib
+2,Беседа о го,Нечаев Алексей,images/stories/nech2.jpg,https://www.youtube.com/embed/0w9EHpWg-X0,Бессмертие|Баланс и равновесие|Cохранить жизнь в поединке|Побег из тюрьмы|Недостатки и опыт,o-go-anechaev,players-lib
+3,ВЭФ-2018: Будущее 21-го века,Минэкономразвития России,images/stories/vef.jpg,results/vef-2018.mp4,,eef-2018,eef-2018
+4,Го в Японии. 60 - 70-е гг.,Такагава Сюкаку,images/stories/takagava.jpg,https://youtu.be/Nem6wWVj-xU,Япония|Такагава Сюкаку|о. Кюсю. пров. Вакаяма|Изготовление камней|г. Нара. 8 в.н.э.,japan-60-70,japan-60-70
+5,Го и нейропластичность,Авраамов Павел,images/stories/shtirlits.jpg,results/neiro.mp4,Зоны Бродмана|Планирование будущего|Штирлиц и Шелленберг|Связность зон мозга|Стеклянный потолок,neiro,neiro
