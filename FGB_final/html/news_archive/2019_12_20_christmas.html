@@ -1,8 +1,12 @@
 <script>
     $(document).ready(function () {
         $.get('html/template_news_item.html', function (template) {
-            $(template).tmpl(tournaments_2019[7]).appendTo('#news_item_id');
+            $(template).tmpl(news_2019[7]).appendTo('#news_item_id');
         });
+        current_slider_photos.splice(0);
+        current_slider_photos.push(news_2019[7].photos);
+        html_in_div("html/template_slider.html", "#slider_id");
+        html_in_div('html/news_archive/results_2019_12_20.html', '#results_id');
     });
 </script>
 
@@ -10,6 +14,8 @@
   <div class="data_panel">
     <h1>9-ый рождественский турнир</h1>
     <div id="news_item_id"></div>
+    <div id="slider_id" style="padding-bottom: 20px"></div>
+    <div id="results_id" style="margin-bottom: 20px"></div>
 
     <div style="width: 685px;text-align: justify;margin: 0 auto">
     <p>
@@ -111,7 +117,5 @@
     </p>
     </div>
 
-
-    <div id="results_id"></div>
   </div>
 </div>

@@ -1,0 +1,104 @@
+<script>
+    $(document).ready(function () {
+        for (let i = 0; i < results_2019_12_20_1.length; i++) {
+            $('#r2019_12_20_1_template').tmpl(results_2019_12_20_1[i]).appendTo('#results_table_id_1');
+        }
+        decorate_tournament('#results_table_id_1', [4, 5, 6, 7, 8]);
+
+        for (let i = 0; i < results_2019_12_20_2.length; i++) {
+            $('#r2019_12_20_2_template').tmpl(results_2019_12_20_2[i]).appendTo('#results_table_id_2');
+        }
+        decorate_tournament('#results_table_id_2', [4, 5, 6, 7]);
+    });
+</script>
+
+<script type='text/x-jquery-tmpl' id='r2019_12_20_1_template'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${game5}</td>
+    <td>${total}</td>
+    <td>${mms}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+  </tr>
+
+</script>
+
+<div class="table-responsive results_table_hover">
+  <table class="table table-striped table-hover table-bordered">
+    <caption style="background-color: #fcfcfc; color: #333;
+        text-align: center; font-size: 15px">
+      <span><strong>Дети</strong></span>
+    </caption>
+    <thead>
+    <tr class="active">
+      <th>Место</th>
+      <th>Игрок</th>
+      <th>Город</th>
+      <th>Ранг</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>Очки</th>
+      <th>MMS</th>
+      <th>SOS</th>
+      <th>SDOS</th>
+    </tr>
+    </thead>
+    <tbody id="results_table_id_1">
+    </tbody>
+  </table>
+</div>
+
+<script type='text/x-jquery-tmpl' id='r2019_12_20_2_template'>
+  <tr>
+    <td>${place}</td>
+    <td>${player}</td>
+    <td>${city}</td>
+    <td>${rank}</td>
+    <td>${game1}</td>
+    <td>${game2}</td>
+    <td>${game3}</td>
+    <td>${game4}</td>
+    <td>${total}</td>
+    <td>${mms}</td>
+    <td>${sos}</td>
+    <td>${sdos}</td>
+  </tr>
+</script>
+
+<div class="table-responsive results_table_hover">
+  <table class="table table-striped table-hover table-bordered">
+    <caption style="background-color: #ffffff; color: #333;
+        text-align: center; font-size: 15px">
+      <span><strong>Взрослые</strong></span>
+    </caption>
+    <thead>
+    <tr class="active">
+      <th>Место</th>
+      <th>Игрок</th>
+      <th>Город</th>
+      <th>Ранг</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>Очки</th>
+      <th>MMS</th>
+      <th>SOS</th>
+      <th>SDOS</th>
+    </tr>
+    </thead>
+    <tbody id="results_table_id_2">
+    </tbody>
+  </table>
+</div>

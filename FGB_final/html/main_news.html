@@ -1,14 +1,16 @@
 <script>
     $(document).ready(function () {
-        $('#countries_match_info_template').tmpl(matches_2019[3]).appendTo('#main_news_info_id');
-        $('#countries_match_info_template').tmpl(matches_2019[2]).appendTo('#main_news_info_id');
         $('#main_news_info_template').tmpl(news_2019[news_2019.length - 1]).
           appendTo('#main_news_info_id');
-        $('#countries_match_info_template').tmpl(matches_2019[1]).appendTo('#main_news_info_id');
+        $('#countries_match_info_template').tmpl(matches_2019[3]).appendTo('#main_news_info_id');
+        $('#countries_match_info_template').tmpl(matches_2019[2]).appendTo('#main_news_info_id');
         $('#main_news_info_template').tmpl(news_2019[news_2019.length - 2]).
           appendTo('#main_news_info_id');
+        $('#countries_match_info_template').tmpl(matches_2019[1]).appendTo('#main_news_info_id');
+        $('#main_news_info_template').tmpl(news_2019[news_2019.length - 3]).
+          appendTo('#main_news_info_id');
         $('#countries_match_info_template').tmpl(matches_2019[0]).appendTo('#main_news_info_id');
-        for (let i = news_2019.length - 3; i >= 0; i--) {
+        for (let i = news_2019.length - 4; i >= 0; i--) {
             $('#main_news_info_template').tmpl(news_2019[i]).appendTo('#main_news_info_id');
         }
     });

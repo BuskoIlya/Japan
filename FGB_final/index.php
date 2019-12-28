@@ -28,6 +28,7 @@
             'news-2019-09-20' => ['images/2019_09_20_study/01.jpg', 'ФГБ: Belarus Study Open'],
             'news-2019-10-25' => ['images/2019_10_25_autumn/14.jpg', 'ФГБ: Осенний лист'],
             'news-2019-11-23' => ['images/2019_11_23_blr_cp/6.jpg', 'ФГБ: Чемпионат Беларуси 2019 г.'],
+            'news-2019-12-20' => ['images/2019_12_20_christmas/001.jpg', 'ФГБ: 9-ый рождественский турнир'],
             'match-belarus-cyprus-2019-10-08' => ['images/vk/match-belarus-cyprus-2019-10-08.jpg', 'ФГБ: Беларусь - Кипр, 1 тур, командный чемпионат Европы 2019/2020 гг.'],
             'match-belarus-iceland-2019-10-29' => ['images/vk/match-belarus-iceland-2019-10-29.jpg', 'ФГБ: Беларусь - Исландия, 2 тур, командный чемпионат Европы 2019/2020 гг.'],
             'match-bulgaria-belarus-2019-11-26' => ['images/vk/match-bulgaria-belarus-2019-11-26.jpg', 'ФГБ: Болгария - Беларусь, 3 тур, командный чемпионат Европы 2019/2020 гг.'],
@@ -41,7 +42,7 @@
             'tournament-2019-09-20' => ['images/2019_09_20_study/01.jpg', 'ФГБ: Belarus Study Open'],
             'tournament-2019-10-25' => ['images/2019_10_25_autumn/14.jpg', 'ФГБ: Осенний лист'],
             'tournament-2019-11-23' => ['images/2019_11_23_blr_cp/6.jpg', 'ФГБ: Чемпионат Беларуси 2019 г.'],
-            'tournament-2019-12-20' => ['images/vk/2019_12_20_9.jpg', 'ФГБ: 9-ый рождественский турнир'],
+            'tournament-2019-12-20' => ['images/2019_12_20_christmas/001.jpg', 'ФГБ: 9-ый рождественский турнир'],
             'eu-19/20' => ['images/vk/eu-19-20.jpg', 'ФГБ: Командный чемпионат Европы 2019/2020 гг.'],
             'eus' => ['images/vk/eus.jpg', 'ФГБ: Результаты чемпионатов Европы'],
             'wagc' => ['images/vk/wagc.jpg', 'ФГБ: Результаты чемпионатов мира'],
@@ -82,13 +83,13 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?19123">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?19123">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?19123">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?19123">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?19123">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?19123">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?19123">
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?1">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?1">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?1">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?1">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?1">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?1">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?1">
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -98,23 +99,23 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?19123"></script>
-  <script type="text/JavaScript" src="js/index.js?19123"></script>
-  <script type="text/JavaScript" src="js/tabs.js?19123"></script>
+  <script type="text/JavaScript" src="js/countries.js?1"></script>
+  <script type="text/JavaScript" src="js/index.js?1"></script>
+  <script type="text/JavaScript" src="js/tabs.js?1"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?19123"></script>
-  <script type="text/JavaScript" src="js/contacts.js?19123"></script>
-  <script type="text/JavaScript" src="js/matches.js?19123"></script>
-  <script type="text/JavaScript" src="js/news.js?19123"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?191234"></script>
-  <script type="text/JavaScript" src="js/players.js?19123"></script>
-  <script type="text/JavaScript" src="js/results.js?19123"></script>
-  <script type="text/JavaScript" src="js/slider.js?19123"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?19123"></script>
-  <script type="text/JavaScript" src="js/world_data.js?19123"></script>
-  <script type="text/JavaScript" src="js/schools.js?19123"></script>
-  <script type="text/JavaScript" src="js/stories.js?19123"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?1912"></script>
+  <script type="text/JavaScript" src="js/persons.js?1"></script>
+  <script type="text/JavaScript" src="js/contacts.js?1"></script>
+  <script type="text/JavaScript" src="js/matches.js?1"></script>
+  <script type="text/JavaScript" src="js/news.js?1"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?1"></script>
+  <script type="text/JavaScript" src="js/players.js?1"></script>
+  <script type="text/JavaScript" src="js/results.js?1"></script>
+  <script type="text/JavaScript" src="js/slider.js?1"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?1"></script>
+  <script type="text/JavaScript" src="js/world_data.js?1"></script>
+  <script type="text/JavaScript" src="js/schools.js?1"></script>
+  <script type="text/JavaScript" src="js/stories.js?1"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?1"></script>
 
   <script>
       $(document).ready(function () {

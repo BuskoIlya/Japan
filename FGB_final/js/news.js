@@ -221,11 +221,18 @@ var news_2019 = [
         ],
         'news_number': 'news-2019-11-23',
     },
-    /*{
-        'img': '',
+    {
+        'img': 'images/2019_12_20_christmas/001.jpg',
         'date': '20,22.12.2019',
         'title': '9-ый рождественский турнир',
-        'text': '',
+        'text': 'На днях прошел IX Рождественский Фестиваль Го 2019/2020,\n' +
+            'который собрал около 30 участников в сумме детского и взрослого ' +
+            'форовых турниров, играли до темноты, много эмоций, много призов.\n' +
+            'Победителями обоих турниров стала семья Зиновенковых: Антон выйграл ' +
+            'кубок юниоров, отбившись на форе от более сильных соперников, его папа ' +
+            'Евгений - первое место взрослого турнира, возможно благодаря необычному ' +
+            'фусэки в пункты 6-6.\n' +
+            'Поздравляем!',
         'decoration_css': 'color_fill green',
         'news_ref': 'html/news_archive/2019_12_20_christmas.html',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
@@ -233,7 +240,18 @@ var news_2019 = [
         'www_ref': '',
         'city': '(Минск)',
         'author': 'Грунковский Юрий',
-    },*/
+        'person_photo': 'images/persons/grun_ur.jpg',
+        'photos': ['images/2019_12_20_christmas/002.jpg', 'images/2019_12_20_christmas/003.jpg',
+        'images/2019_12_20_christmas/004.jpg', 'images/2019_12_20_christmas/005.jpg',
+        'images/2019_12_20_christmas/006.jpg', 'images/2019_12_20_christmas/007.jpg',
+        'images/2019_12_20_christmas/008.jpg', 'images/2019_12_20_christmas/009.jpg',
+        'images/2019_12_20_christmas/010.jpg', 'images/2019_12_20_christmas/011.jpg',
+        'images/2019_12_20_christmas/012.jpg', 'images/2019_12_20_christmas/014.jpg',
+        'images/2019_12_20_christmas/015.jpg', 'images/2019_12_20_christmas/016.jpg',
+            'images/2019_12_20_christmas/017.jpg', 'images/2019_12_20_christmas/018.jpg',
+        ],
+        'news_number': 'news-2019-12-20',
+    },
 ];
 
 function load_news_data() {
@@ -253,23 +271,26 @@ function load_news_data() {
         let div = $('<div/>');
         let id = 'news-' + i;
         div.attr('id', id);
-        for (let j = 0; j < news[i].length - 2; j++) {
+        for (let j = 0; j < news[i].length - 4; j++) {
             $('#news_template').tmpl(news[i][j]).appendTo(div);
         }
         if (matches[i].length > 0) {
             $('#match_template').tmpl(matches[i][0]).appendTo(div);
         }
-        $('#news_template').tmpl(news[i][news[i].length - 2]).appendTo(div);
+        if (news[i].length > 2) {
+            $('#news_template').tmpl(news[i][news[i].length - 3]).appendTo(div);
+        }
         if (matches[i].length > 1) {
             $('#match_template').tmpl(matches[i][1]).appendTo(div);
         }
-        $('#news_template').tmpl(news[i][news[i].length - 1]).appendTo(div);
+        $('#news_template').tmpl(news[i][news[i].length - 2]).appendTo(div);
         if (matches[i].length > 2) {
             $('#match_template').tmpl(matches[i][2]).appendTo(div);
         }
         if (matches[i].length > 3) {
             $('#match_template').tmpl(matches[i][3]).appendTo(div);
         }
+        $('#news_template').tmpl(news[i][news[i].length - 1]).appendTo(div);
         div.appendTo(li);
         li.appendTo(ul_item);
     }
