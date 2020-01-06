@@ -135,7 +135,7 @@ var matches_2019 = [
         'www_ref': 'https://pandanet-igs.com/communities/euroteamchamps/rounds/608#2',
         'ref_name': 'Беларусь - Исландия',
         'place_css': 'images/places/panda.jpg',
-        'video_ref': 'results/matches/belarus-island/Belarus - Iceland.mp4',
+        'video_ref': 'results/matches/belarus-island/Belarus-Iceland.mp4',
         'video_author': 'Сурма Матеуш',
         'author_css': 'blue',
         'author_ref': './html/pages/players_lib.html',

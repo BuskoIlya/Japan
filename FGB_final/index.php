@@ -51,6 +51,7 @@
             'japan-60-70' => ['images/vk/japan-60-70.jpg', 'ФГБ: Сюкаку Такагава'],
             'legend' => ['images/vk/legend.jpg', 'ФГБ: Легенды о происхождении игры Го'],
             'neiro' => ['images/vk/neiro.jpg', 'ФГБ: Го и нейропластика'],
+            'stone-dragon' => ['images/vk/shool_stone_dragon.jpg', 'ФГБ: школа Го "Каменный дракон"']
             ];
         return $pages[$page];
     }
@@ -83,13 +84,16 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?1">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?1">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?1">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?1">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?1">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?1">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?1">
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?10">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?10">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?10">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?10">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?10">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?10">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?10">
+  <link type="text/css" rel="stylesheet/less" href="css/schools.less?10">
+  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?10"/>
+  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?10"/>
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -99,23 +103,26 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?1"></script>
-  <script type="text/JavaScript" src="js/index.js?1"></script>
-  <script type="text/JavaScript" src="js/tabs.js?1"></script>
+  <script type="text/JavaScript" src="js/countries.js?10"></script>
+  <script type="text/JavaScript" src="js/index.js?10"></script>
+  <script type="text/JavaScript" src="js/tabs.js?10"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?1"></script>
-  <script type="text/JavaScript" src="js/contacts.js?1"></script>
-  <script type="text/JavaScript" src="js/matches.js?1"></script>
-  <script type="text/JavaScript" src="js/news.js?1"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?1"></script>
-  <script type="text/JavaScript" src="js/players.js?1"></script>
-  <script type="text/JavaScript" src="js/results.js?1"></script>
-  <script type="text/JavaScript" src="js/slider.js?1"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?1"></script>
-  <script type="text/JavaScript" src="js/world_data.js?1"></script>
-  <script type="text/JavaScript" src="js/schools.js?1"></script>
-  <script type="text/JavaScript" src="js/stories.js?1"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?1"></script>
+  <script type="text/JavaScript" src="js/persons.js?10"></script>
+  <script type="text/JavaScript" src="js/contacts.js?10"></script>
+  <script type="text/JavaScript" src="js/matches.js?10"></script>
+  <script type="text/JavaScript" src="js/news.js?10"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?10"></script>
+  <script type="text/JavaScript" src="js/players.js?10"></script>
+  <script type="text/JavaScript" src="js/results.js?10"></script>
+  <script type="text/JavaScript" src="js/slider.js?10"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?10"></script>
+  <script type="text/JavaScript" src="js/world_data.js?10"></script>
+  <script type="text/JavaScript" src="js/schools.js?10"></script>
+  <script type="text/JavaScript" src="js/stories.js?10"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?10"></script>
+  <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js?10"></script>
+  <script type="text/javascript" src="carusel/js/jquery.elastislide.js?10"></script>
+  <script type="text/javascript" src="carusel/js/gallery.js?10"></script>
 
   <script>
       $(document).ready(function () {

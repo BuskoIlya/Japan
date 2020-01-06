@@ -51,6 +51,8 @@ page_map.set('japan-60-70', 'html/stories/japan_60_70.html');
 page_map.set('legend', 'html/stories/legend.html');
 page_map.set('neiro', 'html/stories/neiro.html');
 
+page_map.set('stone-dragon', 'html/schools/stone_dragon.html');
+
 function html_in_div(html_from, div_to) {
     $(div_to).load(html_from);
 }
@@ -126,6 +128,21 @@ function add_photos_to_slider(photos) {
         img1.appendTo(div);
         img2.appendTo(div);
         div.appendTo(slider_container);
+    }
+}
+
+function add_photos_to_school_carusel(photos) {
+    let slider_container = $("#school_carusel_container_id");
+    for (let i = 0; i < photos.length; i++) {
+		let li  = $('<li/>');
+		let a = $('<a/>');
+		let img = $('<img/>');
+		img.attr('src', photos[i].photo);
+		img.attr('data-large', photos[i].photo);
+		img.attr('data-description', photos[i].description);
+		img.appendTo(a);
+		a.appendTo(li);
+        li.appendTo(slider_container);
     }
 }
 
