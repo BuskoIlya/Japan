@@ -7,7 +7,7 @@ var news_2018 = [
         'title': 'Кубок Минска',
         'text': 'В последние дни марта в Минске прошел кубок города по Го.',
         'decoration_css': 'color_fill green',
-        'news_ref': 'html/news_archive/2018_03_23_minsk_cup.html',
+        'news_ref': 'html/news_archive/2018/2018_03_23_minsk_cup.html',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'place_css': 'images/places/minsk.jpg',
         'www_ref': '',
@@ -27,7 +27,7 @@ var news_2018 = [
         'text': 'В начале декабря в минском дворце детей и молодежи ' +
             'прошел чемпионат страны по Го.',
         'decoration_css': 'color_fill green',
-        'news_ref': 'html/news_archive/2018_11_30_blr_chp.html',
+        'news_ref': 'html/news_archive/2018/2018_11_30_blr_chp.html',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'place_css': 'images/places/minsk.jpg',
         'www_ref': '',
@@ -52,7 +52,7 @@ var news_2019 = [
             'посвященный китайскому новому году и организованный совместно ' +
             'федерацией Го России и консульством Китая в Санкт-Петербурге.',
         'decoration_css': 'color_fill pink',
-        'news_ref': 'html/news_archive/2019_02_16_spb_chine_cup.html',
+        'news_ref': 'html/news_archive/2019/2019_02_16_spb_chine_cup.html',
         'address': 'Россия, г. Санкт-Петербург, Лермонтовский пр., 43/1, отель Азимут, 18 этаж.',
         'place_css': 'images/places/spb.jpg',
         'www_ref': 'https://gofederation.ru/tournaments/278633125',
@@ -78,7 +78,7 @@ var news_2019 = [
         'title': 'Кубок Минска',
         'text': 'В последние дни марта в Минске прошел кубок города по Го.',
         'decoration_css': 'color_fill green',
-        'news_ref': 'html/news_archive/2019_03_29_minsk_cup.html',
+        'news_ref': 'html/news_archive/2019/2019_03_29_minsk_cup.html',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'place_css': 'images/places/minsk.jpg',
         'www_ref': '',
@@ -99,7 +99,7 @@ var news_2019 = [
         'text': 'C 30 мая по 7 июня в Японии в городе Мацуэ, префектура Симанэ, ' +
             'прошел 40-ой чемпионат мира по Го среди любителей.',
         'decoration_css': 'color_fill blue',
-        'news_ref': 'html/news_archive/2019_05_30_world_championship.html',
+        'news_ref': 'html/news_archive/2019/2019_05_30_world_championship.html',
         'address': 'Япония, Префектура Симанэ, г. Мацуэ, 島根県松江市殿町.',
         'place_css': 'images/places/tokio.jpg',
         'www_ref': 'https://www.nihonkiin.or.jp/event/amakisen/worldama/40/result.html',
@@ -129,7 +129,7 @@ var news_2019 = [
             'этой страны, который является вторым по значимости международным ' +
             'соревнованием по Го среди любителей.',
         'decoration_css': 'color_fill blue',
-        'news_ref': 'html/news_archive/2019_08_30_korea_cup.html',
+        'news_ref': 'html/news_archive/2019/2019_08_30_korea_cup.html',
         'address': 'Южная Корея, г. Сеул, 영월스포츠파크 실내체육관.',
         'place_css': 'images/places/seul.jpg',
         'www_ref': 'http://kpmc.kbaduk.or.kr/eng/result/gameTable.asp',
@@ -151,7 +151,7 @@ var news_2019 = [
         'text': 'Приглашаются все игроки Беларуси, твердо усвоившие правила игры. ' +
             'Фотограф: Марианна Капустик. Организатор: Юрий Грунковский.',
         'decoration_css': 'color_fill green',
-        'news_ref': 'html/news_archive/2019_09_20_study.html',
+        'news_ref': 'html/news_archive/2019/2019_09_20_study.html',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'place_css': 'images/places/minsk.jpg',
         'www_ref': '',
@@ -176,7 +176,7 @@ var news_2019 = [
             'приз еще не было в наших турнирах, да и с погодой Осень не подвела! ' +
             'Вот такой красочный турнир у ребят получился.',
         'decoration_css': 'color_fill green',
-        'news_ref': 'html/news_archive/2019_10_25_autumn.html',
+        'news_ref': 'html/news_archive/2019/2019_10_25_autumn.html',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'place_css': 'images/places/minsk.jpg',
         'www_ref': '',
@@ -202,7 +202,7 @@ var news_2019 = [
             'Им впервые стал Герасютин Никита, обыгравший в борьбе за первое место ' +
             'двух вторых данов.',
         'decoration_css': 'color_fill green',
-        'news_ref': 'html/news_archive/2019_11_23_blr_chp.html',
+        'news_ref': 'html/news_archive/2019/2019_11_23_blr_chp.html',
         'address': 'г. Минск, ул. Стариновская 37, клуб сёги Гинкаммури.',
         'place_css': 'images/places/minsk.jpg',
         'www_ref': '',
@@ -234,7 +234,7 @@ var news_2019 = [
             'фусэки в пункты 6-6.\n' +
             'Поздравляем!',
         'decoration_css': 'color_fill green',
-        'news_ref': 'html/news_archive/2019_12_20_christmas.html',
+        'news_ref': 'html/news_archive/2019/2019_12_20_christmas.html',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
         'place_css': 'images/places/minsk.jpg',
         'www_ref': '',

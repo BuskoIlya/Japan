@@ -103,23 +103,23 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?10"></script>
-  <script type="text/JavaScript" src="js/index.js?10"></script>
-  <script type="text/JavaScript" src="js/tabs.js?10"></script>
+  <script type="text/JavaScript" src="js/countries.js?1"></script>
+  <script type="text/JavaScript" src="js/index.js?1"></script>
+  <script type="text/JavaScript" src="js/tabs.js?1"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?10"></script>
-  <script type="text/JavaScript" src="js/contacts.js?10"></script>
-  <script type="text/JavaScript" src="js/matches.js?10"></script>
-  <script type="text/JavaScript" src="js/news.js?10"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?10"></script>
-  <script type="text/JavaScript" src="js/players.js?10"></script>
-  <script type="text/JavaScript" src="js/results.js?10"></script>
-  <script type="text/JavaScript" src="js/slider.js?10"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?10"></script>
-  <script type="text/JavaScript" src="js/world_data.js?10"></script>
-  <script type="text/JavaScript" src="js/schools.js?10"></script>
-  <script type="text/JavaScript" src="js/stories.js?10"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?10"></script>
+  <script type="text/JavaScript" src="js/persons.js?1"></script>
+  <script type="text/JavaScript" src="js/contacts.js?1"></script>
+  <script type="text/JavaScript" src="js/matches.js?1"></script>
+  <script type="text/JavaScript" src="js/news.js?1"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?1"></script>
+  <script type="text/JavaScript" src="js/players.js?1"></script>
+  <script type="text/JavaScript" src="js/results.js?1"></script>
+  <script type="text/JavaScript" src="js/slider.js?1"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?1"></script>
+  <script type="text/JavaScript" src="js/world_data.js?1"></script>
+  <script type="text/JavaScript" src="js/schools.js?1"></script>
+  <script type="text/JavaScript" src="js/stories.js?1"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?1"></script>
   <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js?10"></script>
   <script type="text/javascript" src="carusel/js/jquery.elastislide.js?10"></script>
   <script type="text/javascript" src="carusel/js/gallery.js?10"></script>
