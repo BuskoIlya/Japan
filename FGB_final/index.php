@@ -29,10 +29,12 @@
             'news-2019-10-25' => ['images/2019_10_25_autumn/14.jpg', 'ФГБ: Осенний лист'],
             'news-2019-11-23' => ['images/2019_11_23_blr_cp/6.jpg', 'ФГБ: Чемпионат Беларуси 2019 г.'],
             'news-2019-12-20' => ['images/2019_12_20_christmas/001.jpg', 'ФГБ: 9-ый рождественский турнир'],
+            'news-2020-01-24' => ['images/2020_01_24/01.jpg', 'ФГБ: Открытый турнир на досках 13х13'],
             'match-belarus-cyprus-2019-10-08' => ['images/vk/match-belarus-cyprus-2019-10-08.jpg', 'ФГБ: Беларусь - Кипр, 1 тур, командный чемпионат Европы 2019/2020 гг.'],
             'match-belarus-iceland-2019-10-29' => ['images/vk/match-belarus-iceland-2019-10-29.jpg', 'ФГБ: Беларусь - Исландия, 2 тур, командный чемпионат Европы 2019/2020 гг.'],
             'match-bulgaria-belarus-2019-11-26' => ['images/vk/match-bulgaria-belarus-2019-11-26.jpg', 'ФГБ: Болгария - Беларусь, 3 тур, командный чемпионат Европы 2019/2020 гг.'],
             'match-spain-belarus-2019-12-17' => ['images/vk/match-spain-belarus-2019-12-17.jpg', 'ФГБ: Испания - Беларусь, 4 тур, командный чемпионат Европы 2019/2020 гг.'],
+            'match-belarus-morocco-2020-01-21' => ['images/vk/match-belarus-morocco-2020-01-21.jpg', 'ФГБ: Беларусь - Марокко, 5 тур, командный чемпионат Европы 2019/2020 гг.'],
             'tournament-2018-03-23' => ['images/2018_03_23_minsk_cup/01.jpg', 'ФГБ: Кубок Минска 2018 г.'],
             'tournament-2018-11-30' => ['images/2018_11_30_blr_chp/09.jpg', 'ФГБ: Чемпионат Беларуси 2018 г.'],
             'tournament-2019-02-16' => ['images/2019_02_16_spb_chine_cup/01.jpg', 'ФГБ: Кубок китайского консула в Санкт-Петерубрге 2019 г.'],
@@ -43,6 +45,8 @@
             'tournament-2019-10-25' => ['images/2019_10_25_autumn/14.jpg', 'ФГБ: Осенний лист'],
             'tournament-2019-11-23' => ['images/2019_11_23_blr_cp/6.jpg', 'ФГБ: Чемпионат Беларуси 2019 г.'],
             'tournament-2019-12-20' => ['images/2019_12_20_christmas/001.jpg', 'ФГБ: 9-ый рождественский турнир'],
+            'tournament-2020-01-24' => ['images/2020_01_24/01.jpg', 'ФГБ: Открытый турнир на досках 13х13'],
+            'tournament-2020-02-15' => ['images/2020_02_15/01.jpg', 'ФГБ: Кубок Вейчи, 15-16 февраля, Китайский культурный центр, г. Минск'],
             'eu-19/20' => ['images/vk/eu-19-20.jpg', 'ФГБ: Командный чемпионат Европы 2019/2020 гг.'],
             'eus' => ['images/vk/eus.jpg', 'ФГБ: Результаты чемпионатов Европы'],
             'wagc' => ['images/vk/wagc.jpg', 'ФГБ: Результаты чемпионатов мира'],
@@ -84,16 +88,16 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?111">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?111">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?111">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?111">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?111">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?111">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?111">
-  <link type="text/css" rel="stylesheet/less" href="css/schools.less?111">
-  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?111"/>
-  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?111"/>
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?33">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?33">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?33">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?33">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?33">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?33">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?33">
+  <link type="text/css" rel="stylesheet/less" href="css/schools.less?33">
+  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?33"/>
+  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?33"/>
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -103,34 +107,29 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?111"></script>
-  <script type="text/JavaScript" src="js/index.js?111"></script>
-  <script type="text/JavaScript" src="js/tabs.js?111"></script>
+  <script type="text/JavaScript" src="js/countries.js?33"></script>
+  <script type="text/JavaScript" src="js/index.js?33"></script>
+  <script type="text/JavaScript" src="js/tabs.js?33"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?111"></script>
-  <script type="text/JavaScript" src="js/contacts.js?111"></script>
-  <script type="text/JavaScript" src="js/matches.js?111"></script>
-  <script type="text/JavaScript" src="js/news.js?111"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?111"></script>
-  <script type="text/JavaScript" src="js/players.js?111"></script>
-  <script type="text/JavaScript" src="js/results.js?111"></script>
-  <script type="text/JavaScript" src="js/slider.js?111"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?111"></script>
-  <script type="text/JavaScript" src="js/world_data.js?111"></script>
-  <script type="text/JavaScript" src="js/schools.js?111"></script>
-  <script type="text/JavaScript" src="js/stories.js?111"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?111"></script>
+  <script type="text/JavaScript" src="js/persons.js?33"></script>
+  <script type="text/JavaScript" src="js/contacts.js?33"></script>
+  <script type="text/JavaScript" src="js/matches.js?33"></script>
+  <script type="text/JavaScript" src="js/news.js?33"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?33"></script>
+  <script type="text/JavaScript" src="js/players.js?33"></script>
+  <script type="text/JavaScript" src="js/results.js?33"></script>
+  <script type="text/JavaScript" src="js/slider.js?33"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?33"></script>
+  <script type="text/JavaScript" src="js/world_data.js?33"></script>
+  <script type="text/JavaScript" src="js/schools.js?33"></script>
+  <script type="text/JavaScript" src="js/stories.js?33"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?33"></script>
   <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js?10"></script>
   <script type="text/javascript" src="carusel/js/jquery.elastislide.js?10"></script>
   <script type="text/javascript" src="carusel/js/gallery.js?10"></script>
 
   <script>
       $(document).ready(function () {
-          //if (window.location.href.includes("federationgo.by")) {
-          //    let hr = window.location.href;
-          //    hr = "http://фгб.бел" + window.location.href.substr(hr.indexOf("federationgo.by") + 15);
-          //    window.location.replace(hr);
-          //}
           html_in_div("html/menu.html", "#menu_id");
           html_in_div("html/footer.html", "#footer_id");
           

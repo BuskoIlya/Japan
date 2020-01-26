@@ -154,10 +154,10 @@ var tournaments_2020 = [
         'decoration_css': 'color_fill green',
         'back_color': 'blr_color_back_css',
         'news_ref': 'html/news_archive/2020/2020_01_24.html',
-        'icon_ok_css': 'icon_ok_inactive',
+        'icon_ok_css': 'icon_ok_active',
         'place_css': 'images/places/minsk.jpg',
         'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
-        'pc': '',
+        'pc': '23',
         'tournament_number': 'tournament-2020-01-24',
     },
     {

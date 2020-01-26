@@ -256,7 +256,23 @@ var news_2019 = [
 
 var news_2020 = [
     {
-
+        'img': 'images/2020_01_24/01.jpg',
+        'date': '24.01.2020',
+        'title': 'Открытый турнир на досках 13х13',
+        'text': 'Провели небольшой турнирчик. Посидели за досками ' +
+            'и хорошо провели время.',
+        'decoration_css': 'color_fill green',
+        'news_ref': 'html/news_archive/2020/2020_01_24.html',
+        'address': 'г. Минск, МДДМ, Старовиленский тракт 41.',
+        'place_css': 'images/places/minsk.jpg',
+        'www_ref': '',
+        'city': '(Минск)',
+        'author': 'Грунковский Юрий',
+        'person_photo': 'images/persons/grun_ur.jpg',
+        'photos': ['images/2020_01_24/01.jpg', 'images/2020_01_24/02.jpg',
+        'images/2020_01_24/03.jpg'],
+        'pc': '23',
+        'news_number': 'news-2020-01-24',
     },
     {
         'img': '',
@@ -289,7 +305,24 @@ function load_news_data() {
     news.push(news_2018);
     let ul_item = $('ul.tabs_data');
 
-    for (let i = 0; i < news.length; i++) {
+    for (let i = 0; i < 1; i++) {
+        let li = $('<li/>');
+        if (i == 0) {
+            li.addClass('active');
+        }
+        let div = $('<div/>');
+        let id = 'news-' + i;
+        div.attr('id', id);
+
+        $('#news_template').tmpl(news[0][0]).appendTo(div);
+        $('#match_template').tmpl(matches[0][0]).appendTo(div);
+
+        div.appendTo(li);
+        li.appendTo(ul_item);
+    }
+
+
+    for (let i = 1; i < news.length; i++) {
         let li = $('<li/>');
         if (i == 0) {
             li.addClass('active');

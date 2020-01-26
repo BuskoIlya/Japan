@@ -1,0 +1,22 @@
+<script>
+    $(document).ready(function () {
+        $.get('html/template_news_item.html', function (template) {
+            $(template).tmpl(news_2020[0]).appendTo('#news_item_id');
+        });
+        current_slider_photos.splice(0);
+        current_slider_photos.push(news_2020[0].photos);
+        html_in_div("html/template_slider.html", "#slider_id");
+        html_in_div('html/news_archive/2020/results_2020_01_24.html', '#results_id');
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>Открытый турнир на досках 13х13</h1>
+    <div id="news_item_id"></div>
+    <div id="slider_id" style="padding-bottom: 20px"></div>
+    <div id="results_id" style="margin-bottom: 20px"></div>
+
+
+  </div>
+</div>
