@@ -254,11 +254,37 @@ var news_2019 = [
     },
 ];
 
+var news_2020 = [
+    {
+
+    },
+    {
+        'img': '',
+        'date': '15-16.02.2020',
+        'title': 'Кубок Вейчи',
+        'text': '',
+        'decoration_css': 'color_fill green',
+        'news_ref': 'html/news_archive/2020/2020_02_15_chine.html',
+        'address': 'г. Минск, Китайский культурный центр, Клары Цеткин 51а',
+        'place_css': 'images/places/minsk.jpg',
+        'www_ref': '',
+        'city': '(Минск)',
+        'author': 'Грунковский Юрий',
+        'person_photo': 'images/persons/grun_ur.jpg',
+        'photos': [
+        ],
+        'news_number': 'news-2020-02-15',
+    },
+
+];
+
 function load_news_data() {
     let matches = [];
+    matches.push(matches_2020);
     matches.push(matches_2019);
     matches.push(matches_2018);
     let news = [];
+    news.push(news_2020);
     news.push(news_2019);
     news.push(news_2018);
     let ul_item = $('ul.tabs_data');
@@ -271,8 +297,10 @@ function load_news_data() {
         let div = $('<div/>');
         let id = 'news-' + i;
         div.attr('id', id);
-        for (let j = 0; j < news[i].length - 4; j++) {
-            $('#news_template').tmpl(news[i][j]).appendTo(div);
+        if (news[i].length > 4) {
+            for (let j = 0; j < news[i].length - 4; j++) {
+                $('#news_template').tmpl(news[i][j]).appendTo(div);
+            }
         }
         if (matches[i].length > 0) {
             $('#match_template').tmpl(matches[i][0]).appendTo(div);
@@ -283,14 +311,18 @@ function load_news_data() {
         if (matches[i].length > 1) {
             $('#match_template').tmpl(matches[i][1]).appendTo(div);
         }
-        $('#news_template').tmpl(news[i][news[i].length - 2]).appendTo(div);
+        if (news[i].length > 1) {
+            $('#news_template').tmpl(news[i][news[i].length - 2]).appendTo(div);
+        }
         if (matches[i].length > 2) {
             $('#match_template').tmpl(matches[i][2]).appendTo(div);
         }
         if (matches[i].length > 3) {
             $('#match_template').tmpl(matches[i][3]).appendTo(div);
         }
-        $('#news_template').tmpl(news[i][news[i].length - 1]).appendTo(div);
+        if (news[i].length > 0) {
+            $('#news_template').tmpl(news[i][news[i].length - 1]).appendTo(div);
+        }
         div.appendTo(li);
         li.appendTo(ul_item);
     }

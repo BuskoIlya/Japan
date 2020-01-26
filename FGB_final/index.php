@@ -84,16 +84,16 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?10">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?10">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?10">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?10">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?10">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?10">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?10">
-  <link type="text/css" rel="stylesheet/less" href="css/schools.less?10">
-  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?10"/>
-  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?10"/>
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?111">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?111">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?111">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?111">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?111">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?111">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?111">
+  <link type="text/css" rel="stylesheet/less" href="css/schools.less?111">
+  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?111"/>
+  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?111"/>
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -103,23 +103,23 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?1"></script>
-  <script type="text/JavaScript" src="js/index.js?1"></script>
-  <script type="text/JavaScript" src="js/tabs.js?1"></script>
+  <script type="text/JavaScript" src="js/countries.js?111"></script>
+  <script type="text/JavaScript" src="js/index.js?111"></script>
+  <script type="text/JavaScript" src="js/tabs.js?111"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?1"></script>
-  <script type="text/JavaScript" src="js/contacts.js?1"></script>
-  <script type="text/JavaScript" src="js/matches.js?1"></script>
-  <script type="text/JavaScript" src="js/news.js?1"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?1"></script>
-  <script type="text/JavaScript" src="js/players.js?1"></script>
-  <script type="text/JavaScript" src="js/results.js?1"></script>
-  <script type="text/JavaScript" src="js/slider.js?1"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?1"></script>
-  <script type="text/JavaScript" src="js/world_data.js?1"></script>
-  <script type="text/JavaScript" src="js/schools.js?1"></script>
-  <script type="text/JavaScript" src="js/stories.js?1"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?1"></script>
+  <script type="text/JavaScript" src="js/persons.js?111"></script>
+  <script type="text/JavaScript" src="js/contacts.js?111"></script>
+  <script type="text/JavaScript" src="js/matches.js?111"></script>
+  <script type="text/JavaScript" src="js/news.js?111"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?111"></script>
+  <script type="text/JavaScript" src="js/players.js?111"></script>
+  <script type="text/JavaScript" src="js/results.js?111"></script>
+  <script type="text/JavaScript" src="js/slider.js?111"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?111"></script>
+  <script type="text/JavaScript" src="js/world_data.js?111"></script>
+  <script type="text/JavaScript" src="js/schools.js?111"></script>
+  <script type="text/JavaScript" src="js/stories.js?111"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?111"></script>
   <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js?10"></script>
   <script type="text/javascript" src="carusel/js/jquery.elastislide.js?10"></script>
   <script type="text/javascript" src="carusel/js/gallery.js?10"></script>

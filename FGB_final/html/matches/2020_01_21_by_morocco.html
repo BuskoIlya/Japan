@@ -1,0 +1,14 @@
+<script>
+    $(document).ready(function () {
+        $.get('html/template_match_item.html', function (template) {
+            $(template).tmpl(matches_2020[0]).appendTo('#match_item_id');
+        });
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>League D 2019/2020 - Round 5</h1>
+    <div id="match_item_id"></div>
+  </div>
+</div>
