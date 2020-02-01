@@ -59,6 +59,7 @@ page_map.set('legend', 'html/stories/legend.html');
 page_map.set('neiro', 'html/stories/neiro.html');
 
 page_map.set('stone-dragon', 'html/schools/stone_dragon.html');
+page_map.set('vit-go', 'html/schools/vitebsk.html');
 
 function html_in_div(html_from, div_to) {
     $(div_to).load(html_from);
