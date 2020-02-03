@@ -161,7 +161,7 @@ var tournaments_2020 = [
         'tournament_number': 'tournament-2020-01-24',
     },
     {
-        'date': 'Февраль 15-16',
+        'date': 'Март 14-15',
         'name': 'Кубок Вейчи',
         'city': '(Минск, Беларусь)',
         'description': 'Описание...',
@@ -172,7 +172,7 @@ var tournaments_2020 = [
         'place_css': 'images/places/minsk.jpg',
         'address': 'г. Минск, Китайский культурный центр, Клары Цеткин 51а',
         'pc': '',
-        'tournament_number': 'tournament-2020-02-15',
+        'tournament_number': 'tournament-2020-03-14',
     },
     {
         'date': 'Март 21-22',

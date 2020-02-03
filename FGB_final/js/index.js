@@ -46,7 +46,7 @@ page_map.set('tournament-2019-11-23', 'html/news_archive/2019/2019_11_23_blr_chp
 page_map.set('tournament-2019-12-20', 'html/news_archive/2019/2019_12_20_christmas.html');
 
 page_map.set('tournament-2020-01-24', 'html/news_archive/2020/2020_01_24.html');
-page_map.set('tournament-2020-02-15', 'html/news_archive/2020/2020_02_15_chine.html');
+page_map.set('tournament-2020-03-14', 'html/news_archive/2020/2020_02_15_chine.html');
 
 page_map.set('eu-19/20', 'html/world_archive/eu_19_20.html');
 page_map.set('eus', 'html/world_archive/eus.html');
