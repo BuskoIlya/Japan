@@ -316,6 +316,7 @@ function load_news_data() {
 
         $('#news_template').tmpl(news[0][0]).appendTo(div);
         $('#match_template').tmpl(matches[0][0]).appendTo(div);
+        $('#match_template').tmpl(matches[0][1]).appendTo(div);
 
         div.appendTo(li);
         li.appendTo(ul_item);

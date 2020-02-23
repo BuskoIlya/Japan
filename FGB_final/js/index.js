@@ -33,6 +33,7 @@ page_map.set('match-belarus-iceland-2019-10-29', 'html/matches/2019_10_29_by_ice
 page_map.set('match-bulgaria-belarus-2019-11-26', 'html/matches/2019_11_26_by_bulgaria.html');
 page_map.set('match-spain-belarus-2019-12-17', 'html/matches/2019_12_17_by_spain.html');
 page_map.set('match-belarus-morocco-2020-01-21', 'html/matches/2020_01_21_by_morocco.html');
+page_map.set('match-belarus-portugal-2020-02-18', 'html/matches/2020_02_18_by_portugal.html');
 
 page_map.set('tournament-2018-03-23', 'html/news_archive/2018/2018_03_23_minsk_cup.html');
 page_map.set('tournament-2018-11-30', 'html/news_archive/2018/2018_11_30_blr_chp.html');

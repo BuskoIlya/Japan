@@ -2,7 +2,6 @@
 <html lang="en/ru" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="UTF-8"/>
-
 <?php
     function get_vk()
     {
@@ -35,6 +34,7 @@
             'match-bulgaria-belarus-2019-11-26' => ['images/vk/match-bulgaria-belarus-2019-11-26.jpg', 'ФГБ: Болгария - Беларусь, 3 тур, командный чемпионат Европы 2019/2020 гг.'],
             'match-spain-belarus-2019-12-17' => ['images/vk/match-spain-belarus-2019-12-17.jpg', 'ФГБ: Испания - Беларусь, 4 тур, командный чемпионат Европы 2019/2020 гг.'],
             'match-belarus-morocco-2020-01-21' => ['images/vk/match-belarus-morocco-2020-01-21.jpg', 'ФГБ: Беларусь - Марокко, 5 тур, командный чемпионат Европы 2019/2020 гг.'],
+            'match-belarus-portugal-2020-02-18' => ['images/vk/match-belarus-portugal-2020-02-18.jpg', 'ФГБ: Беларусь - Португалия, 6 тур, командный чемпионат Европы 2019/2020 гг.'],
             'tournament-2018-03-23' => ['images/2018_03_23_minsk_cup/01.jpg', 'ФГБ: Кубок Минска 2018 г.'],
             'tournament-2018-11-30' => ['images/2018_11_30_blr_chp/09.jpg', 'ФГБ: Чемпионат Беларуси 2018 г.'],
             'tournament-2019-02-16' => ['images/2019_02_16_spb_chine_cup/01.jpg', 'ФГБ: Кубок китайского консула в Санкт-Петерубрге 2019 г.'],
@@ -89,16 +89,16 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?41">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?41">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?41">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?41">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?41">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?41">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?41">
-  <link type="text/css" rel="stylesheet/less" href="css/schools.less?41">
-  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?41"/>
-  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?41"/>
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?41212">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?41212">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?41212">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?41212">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?41212">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?41212">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?41212">
+  <link type="text/css" rel="stylesheet/less" href="css/schools.less?41212">
+  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?41212"/>
+  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?41212"/>
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -108,26 +108,26 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?41"></script>
-  <script type="text/JavaScript" src="js/index.js?41"></script>
-  <script type="text/JavaScript" src="js/tabs.js?41"></script>
+  <script type="text/JavaScript" src="js/countries.js?41212"></script>
+  <script type="text/JavaScript" src="js/index.js?41212"></script>
+  <script type="text/JavaScript" src="js/tabs.js?41212"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?41"></script>
-  <script type="text/JavaScript" src="js/contacts.js?41"></script>
-  <script type="text/JavaScript" src="js/matches.js?41"></script>
-  <script type="text/JavaScript" src="js/news.js?41"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?41"></script>
-  <script type="text/JavaScript" src="js/players.js?41"></script>
-  <script type="text/JavaScript" src="js/results.js?41"></script>
-  <script type="text/JavaScript" src="js/slider.js?41"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?41"></script>
-  <script type="text/JavaScript" src="js/world_data.js?41"></script>
-  <script type="text/JavaScript" src="js/schools.js?41"></script>
-  <script type="text/JavaScript" src="js/stories.js?41"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?41"></script>
-  <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js?10"></script>
-  <script type="text/javascript" src="carusel/js/jquery.elastislide.js?10"></script>
-  <script type="text/javascript" src="carusel/js/gallery.js?10"></script>
+  <script type="text/JavaScript" src="js/persons.js?41212"></script>
+  <script type="text/JavaScript" src="js/contacts.js?41212"></script>
+  <script type="text/JavaScript" src="js/matches.js?41212"></script>
+  <script type="text/JavaScript" src="js/news.js?41212"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?41212"></script>
+  <script type="text/JavaScript" src="js/players.js?41212"></script>
+  <script type="text/JavaScript" src="js/results.js?41212"></script>
+  <script type="text/JavaScript" src="js/slider.js?41212"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?41212"></script>
+  <script type="text/JavaScript" src="js/world_data.js?41212"></script>
+  <script type="text/JavaScript" src="js/schools.js?41212"></script>
+  <script type="text/JavaScript" src="js/stories.js?41212"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?41212"></script>
+  <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="carusel/js/jquery.elastislide.js"></script>
+  <script type="text/javascript" src="carusel/js/gallery.js"></script>
 
   <script>
       $(document).ready(function () {

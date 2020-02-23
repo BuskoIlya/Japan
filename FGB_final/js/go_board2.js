@@ -1,5 +1,6 @@
 var current_game_path = '';
 var current_board;
+
 class BoardMatch {
     constructor(g_flag1, g_player1, g_photo1,
                 g_flag2, g_player2, g_photo2,
@@ -199,9 +200,16 @@ function next_move() {
                 'background-image',
                 'url(' + 'images/go_board/go_cell_' + dead_cell.cell_type + '.jpg)');
             html_item.html("");
-
+            if (move.color == 'black') {
+                dead_white++;
+            } else {
+                dead_black++;
+            }
         }
     }
+    $("#white_dead_id").attr("value", "Снятые белые " + dead_white);
+    $("#black_dead_id").attr("value", "Снятые чёрные " + dead_black);
+
     current_move++;
     $("#go_board_current_move_id").attr("value", current_move);
 }
@@ -239,8 +247,15 @@ function prev_move() {
             p.text("" + cur_dead);
             p.attr("style", "color:firebrick;margin:0");
             p.appendTo(html_dead_item);
+            if (move.color == 'black') {
+                dead_white--;
+            } else {
+                dead_black--;
+            }
         }
     }
+    $("#white_dead_id").attr("value", "Снятые белые " + dead_white);
+    $("#black_dead_id").attr("value", "Снятые чёрные " + dead_black);
 }
 
 function prev_10_move() {

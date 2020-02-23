@@ -64,6 +64,7 @@
         </div>
       </div>
 
+      {{if $video_author}}
       <div class="news_item_css" style="text-align:center; margin-top:20px">
         <p style="font-size: 16px;">Обзор матча</p>
         <p>
@@ -82,6 +83,8 @@
           </video>
         </p>
       </div>
+      {{else}}
+      {{/if}}
 
     <div class="table-responsive"
       style="width:fit-content;margin:0 auto;margin-top:20px;font-size:14px">
