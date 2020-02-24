@@ -1,0 +1,102 @@
+<script>
+    $(document).ready(function () {
+        html_in_div("html/addresses/brainforce.html", "#google_address");
+        schools_gallery.splice(0);
+        schools_gallery.push(
+            {
+                photo: "images/schools/brainforce/bf01.jpg",
+                description: "г. Минск, ул. Ежи Гедройца, д. 20 (Школа №9), кабинет В-110"
+            }
+        );
+        schools_gallery.push(
+            {
+                photo: "images/schools/brainforce/bf02.jpg",
+                description: ""
+            }
+        );
+        schools_gallery.push(
+            {
+                photo: "images/schools/brainforce/bf03.jpg",
+                description: ""
+            }
+        );
+        schools_gallery.push(
+            {
+                photo: "images/schools/brainforce/bf04.jpg",
+                description: ""
+            }
+        );
+        html_in_div("carusel/carusel.html", "#slider_id");
+    });
+</script>
+
+<div class="inner_page">
+  <div class="data_panel">
+    <h1>БрейнФорс</h1>
+
+    <div class="container" style="width: 920px; margin: 0">
+      <div class="row">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 school_info_block">
+          <div id="info">
+            <p>
+              <small class="author">
+                <span class="glyphicon glyphicon-user" aria-hidden="true">
+                  <strong><i style="font-size: large; line-height: 2">Руководитель:</i></strong>
+                  <a href="#" class="color_fill green" style="padding-left:5px"
+                     onclick="html_in_div('./html/pages/contacts.html', '#main_id')">
+                    Зиновенков Евгений Викторович
+                  </a>
+                </span>
+              </small>
+              <br>
+            <div class="address">
+              <div style="float: left"><img class="city_icon"
+                                            src="images/schools/brainforce/bf01.jpg"/></div>
+              <i class="address_text">г. Минск, ул. Богдановича, д. 155, оф. 502</i>
+              <div id="google_address"></div>
+            </div>
+            <br>
+            <div style="text-align: justify;margin: 0 auto">
+              <p>
+                &emsp;&emsp;<i style="text-decoration: underline">Расписание занятий</i>:<br>
+                &emsp;&emsp;Взрослые <br>
+                &emsp;&emsp;&emsp;Пн 19:00 - ...<br>
+                <br>
+                &emsp;&emsp;<i style="text-decoration: underline">Тел.</i>:&emsp;+37529-707-79-85
+                (Зиновенков Е. В.)
+              </p>
+            </div>
+            </p>
+
+            <!--div class="news_item_css" style="text-align:center; margin-top:20px">
+              <p style="font-size: 16px;">Урок в школе</p>
+              <p>
+                <video width="640" height="360" controls>
+                  <source src="images/schools/sd_video1.mp4" type="video/mp4">
+                </video>
+              </p>
+            </div-->
+
+            <div id="slider_id"></div>
+
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 school_flag_block">
+          <div class="school_flag">
+            <a><img src="images/schools/brainforce/bf01.jpg"></a>
+          </div>
+          <p class="title">Минск, БрейнФорс</p>
+          <p style="font-size: 17px">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          </p>
+          <p>
+          <ol style="text-align: left">
+
+          </ol>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

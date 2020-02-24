@@ -1,8 +1,8 @@
 Каменный дракон,images/schools/дворец-молодежи-640.jpg,Минск,Старовиленский тракт/д. 41/каб. 303,Грунковский Юрий Анатольевич,+37529-369-92-94,time,stone-dragon,https://vk.com/club23841735
 HAGAKURE,images/schools/hagakure.jpg,Минск, ул. Короля 51 Puer Club,Пивнев Руслан Михайлович,+37525-968-20-68,time,schools,https://vk.com/minskgogame
-Малиновка,images/schools/shkola9-640.jpg,Минск,ул.Е.Гедройца/д. 20/каб. В-110,Зиновенков Евгений Викторович,+37529-707-79-85,time,schools,https://vk.com/minsk_go
-БрейнФорс,images/schools/bogdanovicha-155.jpg,Минск,ул. Богдановича/д. 155/оф. 502,Зиновенков Евгений Викторович,+37529-707-79-85,time,schools,https://vk.com/minsk_go
-Го в Витебске,images/schools/vit_go.jpg,Витебск,ул. Гагарина 24,Бусько Илья Владимирович,,time,vit-go,https://vk.com/goinvitebsk
+Малиновка,images/schools/shkola9-640.jpg,Минск,ул.Е.Гедройца/д. 20/каб. В-110,Зиновенков Евгений Викторович,+37529-707-79-85,time,malinovka,https://vk.com/minsk_go
+БрейнФорс,images/schools/bogdanovicha-155.jpg,Минск,ул. Богдановича/д. 155/оф. 502,Зиновенков Евгений Викторович,+37529-707-79-85,time,brainforce,https://vk.com/minsk_go
+Го в Витебске,images/schools/vit_city.jpg,Витебск,ул. Гагарина 24,Бусько Илья Владимирович,,time,vit-go,https://vk.com/goinvitebsk
 Гомель,images/no_photo.png,Гомель,Чайный домик,Дмитрий Мокухо,+37529-157-99-31,time,schools,?page=schools
 Гродно,images/no_photo.png,Гродно,Чайный домик,ххх,ххх,time,schools,?page=schools
 Брест,images/no_photo.png,Брест,Чайный домик,ххх,ххх,time,schools,?page=schools

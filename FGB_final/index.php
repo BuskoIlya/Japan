@@ -56,7 +56,9 @@
             'legend' => ['images/vk/legend.jpg', 'ФГБ: Легенды о происхождении игры Го'],
             'neiro' => ['images/vk/neiro.jpg', 'ФГБ: Го и нейропластика'],
             'stone-dragon' => ['images/vk/shool_stone_dragon.jpg', 'ФГБ: школа Го "Каменный дракон"'],
-            'vit-go' => ['images/vk/vit_go_akva.jpg', 'ФГБ: Го в Витебске']
+            'vit-go' => ['images/vk/vit_go_akva.jpg', 'ФГБ: Го в Витебске'],
+            'malinovka' => ['images/vk/minsk-malinovka.jpg', 'ФГБ: Минск, Малиновка'],
+            'brainforce' => ['images/vk/brainforce.jpg', 'ФГБ: Минск, БрейнФорсе']
             ];
         return $pages[$page];
     }
@@ -89,16 +91,16 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?41212">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?41212">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?41212">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?41212">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?41212">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?41212">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?41212">
-  <link type="text/css" rel="stylesheet/less" href="css/schools.less?41212">
-  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?41212"/>
-  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?41212"/>
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?412152">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?412512">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?412512">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?412512">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?415212">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?412512">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?415212">
+  <link type="text/css" rel="stylesheet/less" href="css/schools.less?415212">
+  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?412512"/>
+  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?412512"/>
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -108,23 +110,23 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?41212"></script>
-  <script type="text/JavaScript" src="js/index.js?41212"></script>
-  <script type="text/JavaScript" src="js/tabs.js?41212"></script>
+  <script type="text/JavaScript" src="js/countries.js?415212"></script>
+  <script type="text/JavaScript" src="js/index.js?4125122"></script>
+  <script type="text/JavaScript" src="js/tabs.js?412512"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?41212"></script>
-  <script type="text/JavaScript" src="js/contacts.js?41212"></script>
-  <script type="text/JavaScript" src="js/matches.js?41212"></script>
-  <script type="text/JavaScript" src="js/news.js?41212"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?41212"></script>
-  <script type="text/JavaScript" src="js/players.js?41212"></script>
-  <script type="text/JavaScript" src="js/results.js?41212"></script>
-  <script type="text/JavaScript" src="js/slider.js?41212"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?41212"></script>
-  <script type="text/JavaScript" src="js/world_data.js?41212"></script>
-  <script type="text/JavaScript" src="js/schools.js?41212"></script>
-  <script type="text/JavaScript" src="js/stories.js?41212"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?41212"></script>
+  <script type="text/JavaScript" src="js/persons.js?415212"></script>
+  <script type="text/JavaScript" src="js/contacts.js?412512"></script>
+  <script type="text/JavaScript" src="js/matches.js?412512"></script>
+  <script type="text/JavaScript" src="js/news.js?412152"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?415212"></script>
+  <script type="text/JavaScript" src="js/players.js?412512"></script>
+  <script type="text/JavaScript" src="js/results.js?415212"></script>
+  <script type="text/JavaScript" src="js/slider.js?412512"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?412512"></script>
+  <script type="text/JavaScript" src="js/world_data.js?415212"></script>
+  <script type="text/JavaScript" src="js/schools.js?41225132"></script>
+  <script type="text/JavaScript" src="js/stories.js?451212"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?412512"></script>
   <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="carusel/js/jquery.elastislide.js"></script>
   <script type="text/javascript" src="carusel/js/gallery.js"></script>
