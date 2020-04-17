@@ -276,7 +276,7 @@ var news_2020 = [
     },
     {
         'img': '',
-        'date': '14-15.03.2020',
+        'date': '4-5.04.2020',
         'title': 'Кубок Вейчи',
         'text': '',
         'decoration_css': 'color_fill green',
@@ -289,7 +289,7 @@ var news_2020 = [
         'person_photo': 'images/persons/grun_ur.jpg',
         'photos': [
         ],
-        'news_number': 'news-2020-03-14',
+        'news_number': 'news-2020-04-4',
     },
 
 ];
