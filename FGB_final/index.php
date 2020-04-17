@@ -46,7 +46,7 @@
             'tournament-2019-11-23' => ['images/2019_11_23_blr_cp/6.jpg', 'ФГБ: Чемпионат Беларуси 2019 г.'],
             'tournament-2019-12-20' => ['images/2019_12_20_christmas/001.jpg', 'ФГБ: 9-ый рождественский турнир'],
             'tournament-2020-01-24' => ['images/2020_01_24/01.jpg', 'ФГБ: Открытый турнир на досках 13х13'],
-            'tournament-2020-03-14' => ['images/2020_02_15/01.jpg', 'ФГБ: Кубок Вейчи, 14-15 марта, Китайский культурный центр, г. Минск'],
+            'tournament-2020-04-4' => ['images/2020_02_15/01.jpg', 'ФГБ: Кубок Вейчи, 4-5 апреля, Китайский культурный центр, г. Минск'],
             'eu-19/20' => ['images/vk/eu-19-20.jpg', 'ФГБ: Командный чемпионат Европы 2019/2020 гг.'],
             'eus' => ['images/vk/eus.jpg', 'ФГБ: Результаты чемпионатов Европы'],
             'wagc' => ['images/vk/wagc.jpg', 'ФГБ: Результаты чемпионатов мира'],
@@ -91,16 +91,16 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?412152">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?412512">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?412512">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?412512">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?415212">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?412512">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?415212">
-  <link type="text/css" rel="stylesheet/less" href="css/schools.less?415212">
-  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?412512"/>
-  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?412512"/>
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?41352">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?43112">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?41312">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?41312">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?43112">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?415312">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?4132">
+  <link type="text/css" rel="stylesheet/less" href="css/schools.less?415312">
+  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?4312"/>
+  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?411312"/>
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -110,23 +110,23 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?415212"></script>
-  <script type="text/JavaScript" src="js/index.js?4125122"></script>
-  <script type="text/JavaScript" src="js/tabs.js?412512"></script>
+  <script type="text/JavaScript" src="js/countries.js?4151132"></script>
+  <script type="text/JavaScript" src="js/index.js?41213522"></script>
+  <script type="text/JavaScript" src="js/tabs.js?4111532"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?415212"></script>
-  <script type="text/JavaScript" src="js/contacts.js?412512"></script>
-  <script type="text/JavaScript" src="js/matches.js?412512"></script>
-  <script type="text/JavaScript" src="js/news.js?412152"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?415212"></script>
-  <script type="text/JavaScript" src="js/players.js?412512"></script>
-  <script type="text/JavaScript" src="js/results.js?415212"></script>
-  <script type="text/JavaScript" src="js/slider.js?412512"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?412512"></script>
-  <script type="text/JavaScript" src="js/world_data.js?415212"></script>
-  <script type="text/JavaScript" src="js/schools.js?41225132"></script>
-  <script type="text/JavaScript" src="js/stories.js?451212"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?412512"></script>
+  <script type="text/JavaScript" src="js/persons.js?41515312"></script>
+  <script type="text/JavaScript" src="js/contacts.js?41315512"></script>
+  <script type="text/JavaScript" src="js/matches.js?41211532"></script>
+  <script type="text/JavaScript" src="js/news.js?45213"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?4132512"></script>
+  <script type="text/JavaScript" src="js/players.js?41312152"></script>
+  <script type="text/JavaScript" src="js/results.js?4111532"></script>
+  <script type="text/JavaScript" src="js/slider.js?4121352"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?43152"></script>
+  <script type="text/JavaScript" src="js/world_data.js?4151132"></script>
+  <script type="text/JavaScript" src="js/schools.js?412135132"></script>
+  <script type="text/JavaScript" src="js/stories.js?45251312"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?413512"></script>
   <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="carusel/js/jquery.elastislide.js"></script>
   <script type="text/javascript" src="carusel/js/gallery.js"></script>
