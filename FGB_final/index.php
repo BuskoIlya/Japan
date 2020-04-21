@@ -91,16 +91,19 @@
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet/less" href="css/common.less?41352">
-  <link type="text/css" rel="stylesheet/less" href="css/colors.less?43112">
-  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?41312">
-  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?41312">
-  <link type="text/css" rel="stylesheet/less" href="css/slider.less?43112">
-  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?415312">
-  <link type="text/css" rel="stylesheet/less" href="css/index.less?4132">
-  <link type="text/css" rel="stylesheet/less" href="css/schools.less?415312">
-  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?4312"/>
-  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?411312"/>
+  <link type="text/css" rel="stylesheet/less" href="css/common.less?413252">
+  <link type="text/css" rel="stylesheet/less" href="css/colors.less?431212">
+  <link type="text/css" rel="stylesheet/less" href="css/tabs_page.less?413212">
+  <link type="text/css" rel="stylesheet/less" href="css/chain_blocks.less?412312">
+  <link type="text/css" rel="stylesheet/less" href="css/slider.less?431212">
+  <link type="text/css" rel="stylesheet/less" href="css/go_board.less?4153212">
+  <link type="text/css" rel="stylesheet/less" href="css/index.less?41322">
+  <link type="text/css" rel="stylesheet/less" href="css/schools.less?4153212">
+  <link rel="stylesheet" type="text/css" href="carusel/css/style.css?43212"/>
+  <link rel="stylesheet" type="text/css" href="carusel/css/elastislide.css?4121312"/>
+  
+  <link rel="stylesheet" type="text/css" href="photo-gallery/galleria.folio.css?33"/>
+  <link rel="stylesheet" type="text/css" href="photo-gallery/galleria-inline.folio.css?123"/>
 
   <script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
   <script src='libs/jquery.tmpl.min.js'></script>
@@ -110,26 +113,28 @@
           crossorigin="anonymous"></script>
   <script type="text/javascript" src="libs/jssor.slider.min.js"></script>
 
-  <script type="text/JavaScript" src="js/countries.js?4151132"></script>
-  <script type="text/JavaScript" src="js/index.js?41213522"></script>
-  <script type="text/JavaScript" src="js/tabs.js?4111532"></script>
+  <script type="text/JavaScript" src="js/countries.js?41521132"></script>
+  <script type="text/JavaScript" src="js/index.js?412135222"></script>
+  <script type="text/JavaScript" src="js/tabs.js?41115232"></script>
 
-  <script type="text/JavaScript" src="js/persons.js?41515312"></script>
-  <script type="text/JavaScript" src="js/contacts.js?41315512"></script>
-  <script type="text/JavaScript" src="js/matches.js?41211532"></script>
-  <script type="text/JavaScript" src="js/news.js?45213"></script>
-  <script type="text/JavaScript" src="js/tournaments.js?4132512"></script>
-  <script type="text/JavaScript" src="js/players.js?41312152"></script>
-  <script type="text/JavaScript" src="js/results.js?4111532"></script>
-  <script type="text/JavaScript" src="js/slider.js?4121352"></script>
-  <script type="text/JavaScript" src="js/go_board2.js?43152"></script>
-  <script type="text/JavaScript" src="js/world_data.js?4151132"></script>
-  <script type="text/JavaScript" src="js/schools.js?412135132"></script>
-  <script type="text/JavaScript" src="js/stories.js?45251312"></script>
-  <script type="text/JavaScript" src="js/visitor_counter.js?413512"></script>
+  <script type="text/JavaScript" src="js/persons.js?415215312"></script>
+  <script type="text/JavaScript" src="js/contacts.js?413125512"></script>
+  <script type="text/JavaScript" src="js/matches.js?412112532"></script>
+  <script type="text/JavaScript" src="js/news.js?452213"></script>
+  <script type="text/JavaScript" src="js/tournaments.js?41322512"></script>
+  <script type="text/JavaScript" src="js/players.js?413212152"></script>
+  <script type="text/JavaScript" src="js/results.js?41112532"></script>
+  <script type="text/JavaScript" src="js/slider.js?41212352"></script>
+  <script type="text/JavaScript" src="js/go_board2.js?432152"></script>
+  <script type="text/JavaScript" src="js/world_data.js?41521132"></script>
+  <script type="text/JavaScript" src="js/schools.js?4121235132"></script>
+  <script type="text/JavaScript" src="js/stories.js?452521312"></script>
+  <script type="text/JavaScript" src="js/visitor_counter.js?4123512"></script>
   <script type="text/javascript" src="carusel/js/jquery.easing.1.3.js"></script>
   <script type="text/javascript" src="carusel/js/jquery.elastislide.js"></script>
   <script type="text/javascript" src="carusel/js/gallery.js"></script>
+  <script type="text/javascript" src="photo-gallery/galleria.js"></script>
+  <script type="text/javascript" src="photo-gallery/galleria.folio.js"></script>
 
   <script>
       $(document).ready(function () {

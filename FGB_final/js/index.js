@@ -27,6 +27,7 @@ page_map.set('news-2019-12-20', 'html/news_archive/2019/2019_12_20_christmas.htm
 
 page_map.set('news-2020-01-24', 'html/news_archive/2020/2020_01_24.html');
 page_map.set('news-2020-04-4', 'html/news_archive/2020/2020_02_15_chine.html');
+page_map.set('news-2020-07-04', 'html/news_archive/2020/2020_07_03_druzba.html');
 
 page_map.set('match-belarus-cyprus-2019-10-08', 'html/matches/2019_10_08_by_cyprus.html');
 page_map.set('match-belarus-iceland-2019-10-29', 'html/matches/2019_10_29_by_iceland.html');
@@ -48,6 +49,7 @@ page_map.set('tournament-2019-12-20', 'html/news_archive/2019/2019_12_20_christm
 
 page_map.set('tournament-2020-01-24', 'html/news_archive/2020/2020_01_24.html');
 page_map.set('tournament-2020-04-4', 'html/news_archive/2020/2020_02_15_chine.html');
+page_map.set('tournament-2020-07-04', 'html/news_archive/2020/2020_07_03_druzba.html');
 
 page_map.set('eu-19/20', 'html/world_archive/eu_19_20.html');
 page_map.set('eus', 'html/world_archive/eus.html');
@@ -63,6 +65,8 @@ page_map.set('stone-dragon', 'html/schools/stone_dragon.html');
 page_map.set('vit-go', 'html/schools/vitebsk.html');
 page_map.set('malinovka', 'html/schools/malinovka.html');
 page_map.set('brainforce', 'html/schools/brainforce.html');
+
+page_map.set('by-minsk', 'html/belarus/by_minsk.html');
 
 function html_in_div(html_from, div_to) {
     $(div_to).load(html_from);
@@ -159,6 +163,19 @@ function add_photos_to_school_carusel(photos) {
 		img.appendTo(a);
 		a.appendTo(li);
         li.appendTo(slider_container);
+    }
+}
+
+function add_photos_to_gallery(photos) {
+    let slider_container = $("#photos_gallery_container_id");
+    for (let i = 0; i < photos.length; i++) {
+		let a = $('<a/>');
+		a.attr('href', photos[i].photo);
+		let img = $('<img/>');
+		img.attr('src', photos[i].photo);
+		img.attr('data-title', photos[i].description);
+		img.appendTo(a);
+        a.appendTo(slider_container);
     }
 }
 

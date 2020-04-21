@@ -258,6 +258,20 @@ var tournaments_2020 = [
         'pc': '',
         'tournament_number': 'tournament-2020-06-13',
     },
+    /*{
+        'date': '4-5.07.2020',
+        'name': 'Кубок Дружбы',
+        'city': '(Минск, Беларусь)',
+        'description': 'Описание...',
+        'decoration_css': 'color_fill blue',
+        'back_color': 'world_color_back_css',
+        'news_ref': 'html/news_archive/2020/2020_07_03_druzba.html',
+        'icon_ok_css': 'icon_ok_inactive',
+        'place_css': 'images/schools/city_minsk.jpg',
+        'address': 'г. Минск, ул. Макаёнка 23 А.',
+        'pc': '',
+        'tournament_number': 'tournament-2020-07-04',
+    },*/
     {
         'date': 'Август 28-30',
         'name': 'Олимпийский огонь',

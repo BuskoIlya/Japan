@@ -291,7 +291,23 @@ var news_2020 = [
         ],
         'news_number': 'news-2020-04-4',
     },
-
+    /*{
+        'img': '',
+        'date': '4-5.07.2020',
+        'title': 'Кубок Дружбы',
+        'text': '',
+        'decoration_css': 'color_fill blue',
+        'news_ref': 'html/news_archive/2020/2020_07_03_druzba.html',
+        'address': 'г. Минск, ул. Макаёнка 23 А, Комбинат Общественного Питания ОАО Беламо-ммз Им С.И. Вавилова',
+        'place_css': 'images/schools/city_minsk.jpg',
+        'www_ref': '',
+        'city': '(Минск)',
+        'author': 'Бусько Илья',
+        'person_photo': 'images/persons/bus_il.jpg',
+        'photos': [
+        ],
+        'news_number': 'news-2020-07-04',
+    },*/
 ];
 
 function load_news_data() {
